@@ -5,4 +5,4 @@
 - [Sorting C#](sortingCsharp)
 ### [Games made in my spare time](https://yellowsink.itch.io)
 - [Space Shooter](https://yellowsink.itch.io/space-shooter)
-### Why not [join my discord server](https://discord.gg/9ZXzEGd)
+#### And last but not least, why not [join my discord server](https://discord.gg/9ZXzEGd)
