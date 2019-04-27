@@ -5,3 +5,4 @@ Why not join my discord server at [invite.gg/TNR](https://invite.gg/tnr)?
 - [Counter Strike: Purge](CSPurge)
 - [Sorting C#](sortingCsharp)
 - [Unity Games](UnityGames)
+- [Osu! Beatmap Installer](https://github.com/cainy-a/BeatmapInstaller)
