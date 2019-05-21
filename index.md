@@ -6,3 +6,4 @@ Why not join my discord server at [invite.gg/TNR](https://invite.gg/tnr)?
 - [Sorting C#](sortingCsharp)
 - [Unity Games](UnityGames)
 - [FDP](https://github.com/cainy-a/FDP)
+- [Cain's Amazing Discord Bot](https://tinyurl.com/Cains-Amazing-Bot)
