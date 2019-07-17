@@ -8,3 +8,4 @@ Why not join my discord server at [invite.gg/TNR](https://invite.gg/tnr)?
 - [FDP](FDP)
 - [Cain's Amazing Discord Bot](https://tinyurl.com/Cains-Amazing-Bot)
 - [Py#](PySharp)
+- [PS2 game info & box art](ps2)
