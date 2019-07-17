@@ -14,14 +14,26 @@ Game ID (UK): SLES-53557
 
 Disc Type: DVD-ROM
 
-Publisher: EA
+Developer: EA
 
 ## WRC3
 ### Box Art
 
 ### Info
 
+Game ID (UK): SCES-51684
+
+Disc Type: DVD-ROM
+
+Developer: Evolution Studios
+
 ## GT-R 400
 ### Box Art
 
 ### Info
+
+Game ID (UK): SLES-52045
+
+Disc Type: CD-ROM
+
+Developer: Midas Interactive Entertainment
