@@ -3,9 +3,9 @@ This is my repository of info about PS2 Games.
 
 ## Need for Speed: Most Wanted
 ### Box Art
-<img>(https://github.com/cainy-a/cainy-a.github.io/raw/master/PS2%20Scans/Need%20for%20speed%20most%20wanted/nfsmw-front.jpg | width=100)
-<img>(https://github.com/cainy-a/cainy-a.github.io/raw/master/PS2%20Scans/Need%20for%20speed%20most%20wanted/nfsmw-back.jpg | width=100)
-<img>(https://github.com/cainy-a/cainy-a.github.io/raw/master/PS2%20Scans/Need%20for%20speed%20most%20wanted/nfsmw-spine.jpg | width=100)
+<img src= "https://github.com/cainy-a/cainy-a.github.io/raw/master/PS2%20Scans/Need%20for%20speed%20most%20wanted/nfsmw-front.jpg" width=200>
+<img src= "https://github.com/cainy-a/cainy-a.github.io/raw/master/PS2%20Scans/Need%20for%20speed%20most%20wanted/nfsmw-back.jpg" width=200>
+<img src= "https://github.com/cainy-a/cainy-a.github.io/raw/master/PS2%20Scans/Need%20for%20speed%20most%20wanted/nfsmw-spine.jpg" width=200>
 ### Info
 
 ## WRC3
