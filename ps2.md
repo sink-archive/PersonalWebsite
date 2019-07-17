@@ -18,7 +18,11 @@ Developer: EA
 
 ## WRC3
 ### Box Art
+[Front](https://github.com/cainy-a/cainy-a.github.io/raw/master/PS2%20Scans/WRC/WRC3-front.jpg)
 
+[Back](https://github.com/cainy-a/cainy-a.github.io/raw/master/PS2%20Scans/WRC/WRC3-back.jpg)
+
+[Spine](https://github.com/cainy-a/cainy-a.github.io/raw/master/PS2%20Scans/WRC/WRC3-spine.jpg)
 ### Info
 
 Game ID (UK): SCES-51684
@@ -29,7 +33,11 @@ Developer: Evolution Studios
 
 ## GT-R 400
 ### Box Art
+[Front](https://github.com/cainy-a/cainy-a.github.io/raw/master/PS2%20Scans/GTR400/GTR400-front.jpg)
 
+[Back](https://github.com/cainy-a/cainy-a.github.io/raw/master/PS2%20Scans/GTR400/GTR400-back.jpg)
+
+[Spine](https://github.com/cainy-a/cainy-a.github.io/raw/master/PS2%20Scans/GTR400/GTR400-spine.jpg)
 ### Info
 
 Game ID (UK): SLES-52045
