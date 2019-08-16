@@ -7,5 +7,7 @@ Fractals can be created in Powerpoint. In earlier versions of powerpoint this in
 - It recursively iterates automatically
 - Best of all, in Slide Show mode, YOU CAN CLICK TO ZOOM IN ON THE FRACTALS!!!!!!
 
+### [Download the Presentations](https://mega.nz/#F!inwx2Qhb!DRAlLXbfukrDacitJ0y2Ag)
+
 ### Fractal Tree
 [Open Video](https://youtu.be/g_oL_8E7pis)
