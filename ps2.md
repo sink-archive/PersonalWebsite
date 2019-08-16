@@ -3,6 +3,8 @@ This is my repository of info about PS2 Games.
 
 ## Need for Speed: Most Wanted
 ### Box Art
+Click the following to view box art.
+
 [Front](https://github.com/cainy-a/cainy-a.github.io/raw/master/PS2%20Scans/Need%20for%20speed%20most%20wanted/nfsmw-front.jpg)
 
 [Back](https://github.com/cainy-a/cainy-a.github.io/raw/master/PS2%20Scans/Need%20for%20speed%20most%20wanted/nfsmw-back.jpg)
@@ -18,6 +20,8 @@ Developer: EA
 
 ## WRC3
 ### Box Art
+Click the following to view box art.
+
 [Front](https://github.com/cainy-a/cainy-a.github.io/raw/master/PS2%20Scans/WRC3/WRC3-front.jpg)
 
 [Back](https://github.com/cainy-a/cainy-a.github.io/raw/master/PS2%20Scans/WRC3/WRC3-back.jpg)
@@ -33,6 +37,8 @@ Developer: Evolution Studios
 
 ## GT-R 400
 ### Box Art
+Click the following to view box art.
+
 [Front](https://github.com/cainy-a/cainy-a.github.io/raw/master/PS2%20Scans/GTR400/GTR400-front.jpg)
 
 [Back](https://github.com/cainy-a/cainy-a.github.io/raw/master/PS2%20Scans/GTR400/GTR400-back.jpg)
