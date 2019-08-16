@@ -6,3 +6,5 @@ Fractals can be created in Powerpoint. In earlier versions of powerpoint this in
 - It doesn't lag
 - It recursively iterates automatically
 - Best of all, in Slide Show mode, YOU CAN CLICK TO ZOOM IN ON THE FRACTALS!!!!!!
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/g_oL_8E7pis" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
