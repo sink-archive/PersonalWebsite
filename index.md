@@ -1,5 +1,5 @@
 # Hello There!
-## I'm Cain Atkinson and this is my site, but it is mostly a landing page. I code C#, make games, and other stuff.
+## I'm Cain Atkinson and this is my site, but it is mostly a landing page. I write programs and do other (completely random) stuff.
 ### My projects:
 - [Counter Strike: Purge](CSPurge)
 - [Sorting C#](sortingCsharp)
