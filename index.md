@@ -10,7 +10,7 @@
 ### My other projects:
 - [Counter Strike: Purge](CSPurge)
 - [Sorting C#](sortingCsharp)
-- [Unity Games](UnityGames)
+- [Unity Games](unity)
 - [FDP](FDP)
 - [PS2 game info & box art](ps2)
 - [Cool things you can do in Powerpoint](powerpoint)
