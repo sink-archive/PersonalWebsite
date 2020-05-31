@@ -8,6 +8,7 @@
 - [Why I hate Python](PainOfPython)
 
 ### My other projects:
+- [A tool to multiply numbers in batch](MassMultiplier)
 - [Counter Strike: Purge](CSPurge)
 - [Sorting C#](sortingCsharp)
 - [Unity Games](unity)
