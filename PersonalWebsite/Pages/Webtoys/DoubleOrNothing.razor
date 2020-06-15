@@ -1,0 +1,84 @@
+﻿@page "/doublenothing"
+@using System.Security.Cryptography
+
+<h1>Cain's Webtoys!</h1>
+<h2>Double or Nothing</h2>
+
+<p>
+	A simple Double or Nothing. If you end up with 0 money then you'll get 5 for free, so you can keep playing.
+</p>
+
+<div style="display: flex">
+	<div class="btn-group">
+		<button @onclick="DoubleNothing" class="btn btn-primary">Double or Nothing</button>
+		<button @onclick="Insert" class="btn btn-secondary">Insert Money</button>
+	</div>
+</div>
+
+<p style="@_ticker1Style">Note: Insert is for putting money in, and will only work after a game over.</p>
+<p style="@_ticker2Style">Insert your moneys!</p>
+
+<p>
+	Current Amount in play: @_current
+	<br/>Balance: @_balance
+	<br />Your high score (resets on refresh): @_best
+</p>
+
+<p>Built with ASP.NET and Blazor :)</p>
+
+@code
+{
+    int _startingMoney;
+    int _balance = 5;
+    int _current;
+    int _best;
+    string _ticker1Style = "display: none";
+    string _ticker2Style = string.Empty;
+    Statuses _status = Statuses.GameOver;
+
+    void DoubleNothing()
+    {
+        if (_status == Statuses.GameOver)
+            return;
+
+        if (RandomNumberGenerator.GetInt32(0, 2) == 1)
+        {
+            _current *= 2;
+            if (_current > _best)
+                _best = _current;
+        }
+        else
+        {
+	        if (_current > _best)
+		        _best = _current;
+
+            _current = 0;
+            _balance = 5;
+            _ticker1Style = "display: none";
+            _ticker2Style = String.Empty;
+
+            _status = Statuses.GameOver;
+        }
+    }
+
+    void Insert()
+    {
+        if (_status == Statuses.Playing)
+            return;
+
+        _current = 0;
+        _current = _balance;
+        _balance = 0;
+
+        _ticker2Style = "display: none";
+        _ticker1Style = String.Empty;
+
+        _status = Statuses.Playing;
+    }
+
+    enum Statuses
+    {
+        Playing,
+        GameOver
+    }
+}
