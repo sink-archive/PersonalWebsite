@@ -20,7 +20,6 @@
 
 <p>
 	Current Amount in play: @_current
-	<br/>Balance: @_balance
 	<br />Your high score (resets on refresh): @_best
 </p>
 
@@ -28,54 +27,55 @@
 
 @code
 {
-	int _balance = 5;
-    int _current;
-    int _best;
-    string _ticker1Style = "display: none";
-    string _ticker2Style = string.Empty;
-    Statuses _status = Statuses.GameOver;
+        readonly Random _rand = new Random();
+        int _current;
+        int _best;
+        string _ticker1Style = "display: none";
+        string _ticker2Style = string.Empty;
+        Statuses _status = Statuses.GameOver;
 
-    void DoubleNothing()
-    {
-        if (_status == Statuses.GameOver)
-            return;
-
-        if (RandomNumberGenerator.GetInt32(0, 2) > 0)
+        void DoubleNothing()
         {
-            _current *= 2;
-            if (_current > _best)
-                _best = _current;
+            if (_status == Statuses.GameOver)
+                return;
+
+            if (GetRandomBool())
+            {
+                _current *= 2;
+                if (_current > _best)
+                    _best = _current;
+            }
+            else
+            {
+                if (_current > _best)
+                    _best = _current;
+
+                _current = 0;
+                _ticker1Style = "display: none";
+                _ticker2Style = String.Empty;
+
+                _status = Statuses.GameOver;
+            }
         }
-        else
+
+        void Insert()
         {
-	        if (_current > _best)
-		        _best = _current;
+            if (_status == Statuses.Playing)
+                return;
 
-            _current = 0;
-            _balance = 5;
-            _ticker1Style = "display: none";
-            _ticker2Style = String.Empty;
+            _current = 5;
 
-            _status = Statuses.GameOver;
+            _ticker2Style = "display: none";
+            _ticker1Style = String.Empty;
+
+            _status = Statuses.Playing;
         }
-    }
 
-    void Insert()
-    {
-        if (_status == Statuses.Playing)
-            return;
+        bool GetRandomBool() => GetRandomDouble() >= 0.5;
 
-        _current = 0;
-        _current = _balance;
-        _balance = 0;
+        double GetRandomDouble() => _rand.NextDouble();
 
-        _ticker2Style = "display: none";
-        _ticker1Style = String.Empty;
-
-        _status = Statuses.Playing;
-    }
-
-    enum Statuses
+	enum Statuses
     {
         Playing,
         GameOver
