@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "KICcadHDHFK9ZbH6SOdV+5zpPI6+NsjyM0SjYSU0Nvwpl9LPATa19kY0It0nFanGtQBXGnR/HK/vnKPujMpdZw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\caina\\source\\repos\\PersonalWebsite\\PersonalWebsite\\PersonalWebsite.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\caina\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x86\\3.1.3\\microsoft.netcore.app.runtime.win-x86.3.1.3.nupkg.sha512",
+    "C:\\Users\\caina\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x86\\3.1.3\\microsoft.windowsdesktop.app.runtime.win-x86.3.1.3.nupkg.sha512",
+    "C:\\Users\\caina\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x86\\3.1.3\\microsoft.aspnetcore.app.runtime.win-x86.3.1.3.nupkg.sha512"
+  ],
+  "logs": []
+}
