@@ -3,124 +3,146 @@
 <h1>Cain's Webtoys!</h1>
 <h2>Calculator</h2>
 
-<div style="display: flex">
-	<label class="form-control" style="display: flex">@_display</label>
-	<button @onclick="Clear" class="btn btn-primary">C</button>
+<style>
+	html, body {
+		margin: 0;
+		padding: 0;
+	}
+
+	html {
+		height: 100vh !important;
+	}
+
+	body {
+		height: 100% !important;
+	}
+	.btn .form-control div {
+		height: 100% !important;
+	}
+</style>
+
+<div style="width: 100%; height: 100%">
+	<div style="display: flex">
+		<label class="form-control" style="display: flex">@_display</label>
+		<button
+			@onclick="Clear"
+			 class="btn btn-primary"
+			 style="height: calc(1.5em + .75rem + 2px)">
+			C
+		</button>
+	</div>
+
+	<!-- A ton of buttons :) -->
+	<div class="btn-group-vertical" style="display: flex">
+		<div class="btn-group">
+			<button @onclick="() => NumPressed('9')" class="btn btn-secondary">9</button>
+			<button @onclick="() => NumPressed('8')" class="btn btn-secondary">8</button>
+			<button @onclick="() => NumPressed('8')" class="btn btn-secondary">7</button>
+
+			<button @onclick="() => OpPressed('/')" class="btn btn-primary">÷</button>
+		</div>
+		<div class="btn-group">
+			<button @onclick="() => NumPressed('6')" class="btn btn-secondary">6</button>
+			<button @onclick="() => NumPressed('5')" class="btn btn-secondary">5</button>
+			<button @onclick="() => NumPressed('4')" class="btn btn-secondary">4</button>
+
+			<button @onclick="() => OpPressed('*')" class="btn btn-primary">×</button>
+		</div>
+		<div class="btn-group">
+			<button @onclick="() => NumPressed('3')" class="btn btn-secondary">3</button>
+			<button @onclick="() => NumPressed('2')" class="btn btn-secondary">2</button>
+			<button @onclick="() => NumPressed('1')" class="btn btn-secondary">1</button>
+
+			<button @onclick="() => OpPressed('-')" class="btn btn-primary">−</button>
+		</div>
+		<div class="btn-group">
+			<button @onclick="() => NumPressed('0')" class="btn btn-secondary">0</button>
+			<button @onclick="() => NumPressed('.')" class="btn btn-secondary">•</button>
+
+			<button @onclick="Calculate" class="btn btn-primary">=</button>
+			<button @onclick="() => OpPressed('+')" class="btn btn-primary">+</button>
+		</div>
+	</div>
 </div>
-
-<div class="btn-group-vertical" style="display: flex">
-	<div class="btn-group">
-		<button @onclick="() => NumPressed('9')" class="btn btn-secondary">9</button>
-		<button @onclick="() => NumPressed('8')" class="btn btn-secondary">8</button>
-		<button @onclick="() => NumPressed('8')" class="btn btn-secondary">7</button>
-
-		<button @onclick="() => OpPressed('/')" class="btn btn-primary">÷</button>
-	</div>
-	<div class="btn-group">
-		<button @onclick="() => NumPressed('6')" class="btn btn-secondary">6</button>
-		<button @onclick="() => NumPressed('5')" class="btn btn-secondary">5</button>
-		<button @onclick="() => NumPressed('4')" class="btn btn-secondary">4</button>
-
-		<button @onclick="() => OpPressed('*')" class="btn btn-primary">×</button>
-	</div>
-	<div class="btn-group">
-		<button @onclick="() => NumPressed('3')" class="btn btn-secondary">3</button>
-		<button @onclick="() => NumPressed('2')" class="btn btn-secondary">2</button>
-		<button @onclick="() => NumPressed('1')" class="btn btn-secondary">1</button>
-
-		<button @onclick="() => OpPressed('-')" class="btn btn-primary">−</button>
-	</div>
-	<div class="btn-group">
-		<button @onclick="() => NumPressed('0')" class="btn btn-secondary">0</button>
-		<button @onclick="() => NumPressed('.')" class="btn btn-secondary">•</button>
-
-		<button @onclick="Calculate" class="btn btn-primary">=</button>
-		<button @onclick="() => OpPressed('+')" class="btn btn-primary">+</button>
-	</div>
-</div>
-
-<p>
-	<br />BTW: this calculator is very much held together with spit and glue.
-	<br />But it works. Even on Mobile!
-</p>
 
 @code{
-    string _display;
-    double _total;
-    int _numSelect = 1;
-    string _num1 = string.Empty;
-    string _num2 = string.Empty;
-    string _op;
-    bool _done;
 
-    void NumPressed(char num) => NumPressed(num.ToString());
+	string _display;
+	double _total;
+	int _numSelect = 1;
+	string _num1 = string.Empty;
+	string _num2 = string.Empty;
+	string _op;
+	bool _done;
 
-    void NumPressed(string num)
-    {
-        if (_done)
-        {
-            _done = false;
-            Clear();
-        }
-        if (_numSelect == 1)
-        {
-            if (_num1.Length == 16)
-                return;
-            _num1 = _num1 + num;
-            _display = _num1;
-        }
-        else
-        {
-            if (_num2.Length == 16)
-                return;
-            _num2 = _num2 + num;
-            _display = _num2;
-        }
-    }
+	void NumPressed(char num) => NumPressed(num.ToString());
 
-    void OpPressed(char op) => OpPressed(op.ToString());
-
-    void OpPressed(string op)
-    {
-        if (_done)
+	void NumPressed(string num)
+	{
+		if (_done)
+		{
 			_done = false;
-	    _numSelect = 2;
-        _op = op;
-    }
+			Clear();
+		}
+		if (_numSelect == 1)
+		{
+			if (_num1.Length == 16)
+				return;
+			_num1 = _num1 + num;
+			_display = _num1;
+		}
+		else
+		{
+			if (_num2.Length == 16)
+				return;
+			_num2 = _num2 + num;
+			_display = _num2;
+		}
+	}
 
-    void Clear()
-    {
-        _num1 = "";
-        _num2 = "";
-        _numSelect = 1;
-        if (_numSelect == 1)
-            _display = _num1;
-        else
-            _display = _num2;
-    }
-		
-    void Calculate()
-    {
-        switch (_op)
-        {
-            case "+":
-                _total = Convert.ToDouble(_num1) + Convert.ToDouble(_num2);
-                break;
-            case "-":
-                _total = Convert.ToDouble(_num1) - Convert.ToDouble(_num2);
-                break;
-            case "*":
-                _total = Convert.ToDouble(_num1) * Convert.ToDouble(_num2);
-                break;
-            case "/":
-                _total = Convert.ToDouble(_num1) / Convert.ToDouble(_num2);
-                break;
-        }
-	    _display = _total.ToString();
-	    _numSelect = 1;
-        _num1 = _total.ToString();
-        _num2 = "";
-        _done = true;
-    }
+	void OpPressed(char op) => OpPressed(op.ToString());
+
+	void OpPressed(string op)
+	{
+		if (_done)
+			_done = false;
+		_numSelect = 2;
+		_op = op;
+	}
+
+	void Clear()
+	{
+		_num1 = "";
+		_num2 = "";
+		_numSelect = 1;
+		if (_numSelect == 1)
+			_display = _num1;
+		else
+			_display = _num2;
+	}
+
+	void Calculate()
+	{
+		switch (_op)
+		{
+			case "+":
+				_total = Convert.ToDouble(_num1) + Convert.ToDouble(_num2);
+				break;
+			case "-":
+				_total = Convert.ToDouble(_num1) - Convert.ToDouble(_num2);
+				break;
+			case "*":
+				_total = Convert.ToDouble(_num1) * Convert.ToDouble(_num2);
+				break;
+			case "/":
+				_total = Convert.ToDouble(_num1) / Convert.ToDouble(_num2);
+				break;
+		}
+		_display = _total.ToString();
+		_numSelect = 1;
+		_num1 = _total.ToString();
+		_num2 = "";
+		_done = true;
+	}
 
 }
