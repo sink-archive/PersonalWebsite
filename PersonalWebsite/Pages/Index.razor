@@ -1,8 +1,16 @@
 ﻿@page "/"
 
-<h1 class="display-3">Hello, There!</h1>
+<div style="display: flex">
+    <div style="display: block;">
+        <h1 class="display-3">Hello, There!</h1>
 
-<h3 class="display-6">I'm Cain Atkinson and this is my site. I write programs, as well as other random stuff.</h3>
+        <h3 class="display-6">I'm Cain Atkinson and this is my site. I write programs, as well as other random stuff.</h3>
+    </div>
+    <div style="flex: 1"></div>
+    
+    <img src="@GetGravatar" style="width: 120px; height: 120px;" />
+</div>
+
 <p>BTW, don't forget to use the sidebar to navigate around the most important pages!</p>
 
 <h4>Featured Stuff</h4>
@@ -26,3 +34,8 @@
     <a class="list-group-item" href="fdp">A (very) buggy tool to convert between Fractions, Decimals, and Percentages</a>
     <a class="list-group-item" href="powerpoint">Cool stuff you can do in PowerPoint!</a>
 </div>
+
+@code {
+    string GetGravatar
+        => Gravatar.GetImageFromGravatar("cainatkinson98@gmail.com", 120);
+}
