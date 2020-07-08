@@ -1,0 +1,42 @@
+@page "/vector-gallery"
+@using System.Collections.Generic
+
+<style>
+    h5 {
+        text-align: justify;
+    }
+</style>
+
+<div style="display:flex;">
+    <div style="display:block;">
+        <h1 class="display-3">My Abstract Art</h1>
+        <h5>Inspired by this image, which was my profile pic from 2014ish to the beginning of July, 2020: </h5>
+        <h5>This image was the basis for my new set of profile pictures, which are currently in use. Check the homepage to see my current Gravatar.</h5>
+    </div>
+    
+    <img src="abstract_art/bitmap/avatar/avatar_classic.jpeg" style="align-self:flex-end; width:7rem;height:7rem; flex-shrink:0; margin-left:1rem;" />
+</div>
+
+<h3 class="display-6">The Images.</h3>
+
+@foreach (var artwork in _artworks)
+{
+    <!-- Template Goes Here -->
+}
+
+<h3 class="display-6">Get the SVGs and PNGs</h3>
+
+@code{
+    List<Artwork> _artworks = new List<Artwork>
+    {
+        new Artwork("Main Avatar", "abstract_art/vector/avatar/avatar.svg", "abstract_art/bitmap/avatar/avatar.png"),
+        new Artwork("Dark Avatar", "abstract_art/vector/avatar/avatar_dark.svg", "abstract_art/bitmap/avatar/avatar_dark.png"),
+        new Artwork("High Contrast Avatar", "abstract_art/vector/avatar/avatar_contrast.svg", "abstract_art/bitmap/avatar/avatar_contrast.png"),
+        
+        new Artwork("Abstract 1", "abstract_art/vector/abstract-1.svg", "abstract_art/bitmap/abstract-1.png"),
+        new Artwork("Abstract 2", "abstract_art/vector/abstract-2.svg", "abstract_art/bitmap/abstract-2.png"),
+        new Artwork("Abstract 3", "abstract_art/vector/abstract-3.svg", "abstract_art/bitmap/abstract-3.png"),
+        
+        new Artwork("Mashup: Avatar + Abstract 1, 2, & 3", "svg-goes-here", "png-goes-here")
+    }
+}
