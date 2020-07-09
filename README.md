@@ -5,3 +5,5 @@
 
 If it's down I probably ran out of Heroku hours
 Also if it's a bit slow, it's probably just Heroku waking up the server
+
+<small>and my poor judgement im using a Blazor app not Razor MVC</small>
