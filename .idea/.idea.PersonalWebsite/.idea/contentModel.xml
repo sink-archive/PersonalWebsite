@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\caina\AppData\Local\JetBrains\Rider2020.1\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\caina\AppData\Local\JetBrains\Rider2020.1\resharper-host\Local\Transient\ReSharperHost\v201\SolutionCaches\_PersonalWebsite.1575967561.00" t="ExcludeRecursive" />
+    <e p="C:\Users\caina\source\repos\PersonalWebsite" t="IncludeFlat">
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="PersonalWebsite" t="IncludeRecursive">
+        <e p="_Imports.razor" t="Include" />
+        <e p="App.razor" t="Include" />
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="Artwork.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Gravatar.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="PersonalWebsite.AssemblyInfo.cs" t="Include" />
+              <e p="PersonalWebsite.RazorAssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Pages" t="Include">
+          <e p="_Host.cshtml" t="Include" />
+          <e p="Error.razor" t="Include" />
+          <e p="Index.razor" t="Include" />
+          <e p="Static" t="Include">
+            <e p="ChromeOs.razor" t="Include" />
+            <e p="CsPurge.razor" t="Include" />
+            <e p="DiscordFonts.razor" t="Include" />
+            <e p="FDP.razor" t="Include" />
+            <e p="MassMultiplier.razor" t="Include" />
+            <e p="PainOfPython.razor" t="Include" />
+            <e p="Powerpoint.razor" t="Include" />
+            <e p="RunPlusPlus.razor" t="Include" />
+            <e p="SortingCs.razor" t="Include" />
+            <e p="SourceMapInstaller.razor" t="Include" />
+            <e p="UnityGames.razor" t="Include" />
+            <e p="VectorGallery.razor" t="Include" />
+            <e p="WebToys.razor" t="Include" />
+            <e p="YtdlGui.razor" t="Include" />
+          </e>
+          <e p="Webtoys" t="Include">
+            <e p="Calculator.razor" t="Include" />
+            <e p="DoubleOrNothing.razor" t="Include" />
+            <e p="FlexboxDesigner.razor" t="Include" />
+          </e>
+        </e>
+        <e p="PersonalWebsite.csproj" t="IncludeRecursive" />
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+          <e p="PublishProfiles" t="Include">
+            <e p="FolderProfile.pubxml" t="Include" />
+          </e>
+        </e>
+        <e p="Shared" t="Include">
+          <e p="MainLayout.razor" t="Include" />
+          <e p="NavMenu.razor" t="Include" />
+        </e>
+        <e p="Startup.cs" t="Include" />
+        <e p="wwwroot" t="Include">
+          <e p="abstract_art" t="Include">
+            <e p="bitmap" t="Include">
+              <e p="abstract-1.png" t="Include" />
+              <e p="abstract-2.png" t="Include" />
+              <e p="abstract-3.png" t="Include" />
+              <e p="avatar" t="Include">
+                <e p="avatar.png" t="Include" />
+                <e p="avatar_classic.jpeg" t="Include" />
+                <e p="avatar_contrast.png" t="Include" />
+                <e p="avatar_dark.png" t="Include" />
+              </e>
+              <e p="mashups" t="Include">
+                <e p="avatar+abstract1,2,3 - clusterfuck.png" t="Include" />
+              </e>
+            </e>
+            <e p="vector" t="Include">
+              <e p="abstract-1.svg" t="Include" />
+              <e p="abstract-2.svg" t="Include" />
+              <e p="abstract-3.svg" t="Include" />
+              <e p="avatar" t="Include">
+                <e p="avatar.svg" t="Include" />
+                <e p="avatar_contrast.svg" t="Include" />
+                <e p="avatar_dark.svg" t="Include" />
+              </e>
+              <e p="mashups" t="Include">
+                <e p="avatar+abstract1,2,3 - clusterfuck.svg" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="css" t="Include">
+            <e p="bootstrap" t="Include">
+              <e p="bootstrap-grid.min.css" t="Include" />
+              <e p="bootstrap-reboot.min.css" t="Include" />
+              <e p="bootstrap-utilities.min.css" t="Include" />
+              <e p="bootstrap.min.css" t="Include" />
+            </e>
+            <e p="open-iconic" t="Include">
+              <e p="font" t="Include">
+                <e p="css" t="Include">
+                  <e p="open-iconic-bootstrap.min.css" t="Include" />
+                </e>
+                <e p="fonts" t="Include">
+                  <e p="open-iconic.eot" t="Include" />
+                  <e p="open-iconic.otf" t="Include" />
+                  <e p="open-iconic.svg" t="Include" />
+                  <e p="open-iconic.ttf" t="Include" />
+                  <e p="open-iconic.woff" t="Include" />
+                </e>
+              </e>
+              <e p="FONT-LICENSE" t="Include" />
+              <e p="ICON-LICENSE" t="Include" />
+              <e p="README.md" t="Include" />
+            </e>
+            <e p="site.css" t="Include" />
+          </e>
+          <e p="discord_fonts" t="Include">
+            <e p="font.bauhaus93.theme.css" t="Include" />
+            <e p="font.comicsans.theme.css" t="Include" />
+            <e p="font.impact.theme.css" t="Include" />
+            <e p="font.jbmono.theme.css" t="Include" />
+            <e p="font.mojangles.theme.css" t="Include" />
+            <e p="font.papyrus.theme.css" t="Include" />
+            <e p="font.segoe_ui_light.theme.css" t="Include" />
+            <e p="font.times_new_roman.theme.css" t="Include" />
+            <e p="font.txt.theme.css" t="Include" />
+            <e p="font.wingdings.theme.css" t="Include" />
+            <e p="packs" t="Include">
+              <e p="full.zip" t="Include" />
+              <e p="not-serious.zip" t="Include" />
+              <e p="serious.zip" t="Include" />
+            </e>
+          </e>
+          <e p="favicon.ico" t="Include" />
+          <e p="js" t="Include">
+            <e p="bootstrap" t="Include">
+              <e p="bootstrap.bundle.min.js" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="PersonalWebsite.sln" t="IncludeFlat" />
+    </e>
+  </component>
+</project>
