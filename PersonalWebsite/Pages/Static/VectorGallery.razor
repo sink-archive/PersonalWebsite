@@ -5,7 +5,9 @@
 	h5 {
 		text-align: justify;
 	}
-	a {
+	
+	/* the :not() is to exclude the title in the top left, which mysteriously moves down slightly otherwise. */
+	a:not(.navbar-brand .nav-link) {
 		margin: 0.25rem;
 	}
 </style>
