@@ -73,7 +73,7 @@
                 <e p="avatar_dark.png" t="Include" />
               </e>
               <e p="mashups" t="Include">
-                <e p="avatar+abstract1,2,3 - clusterfuck.png" t="Include" />
+                <e p="chaos.png" t="Include" />
               </e>
             </e>
             <e p="vector" t="Include">
@@ -86,7 +86,7 @@
                 <e p="avatar_dark.svg" t="Include" />
               </e>
               <e p="mashups" t="Include">
-                <e p="avatar+abstract1,2,3 - clusterfuck.svg" t="Include" />
+                <e p="chaos.svg" t="Include" />
               </e>
             </e>
           </e>
