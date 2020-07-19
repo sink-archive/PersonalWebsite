@@ -21,7 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="fc32c323-5d42-4b5f-b140-e129c0c750c4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PersonalWebsite/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PersonalWebsite/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PersonalWebsite/Pages/Static/VectorGallery.razor" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/Pages/Static/VectorGallery.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/Pages/Index.razor" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/Pages/Index.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/wwwroot/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/wwwroot/css/site.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,14 +33,21 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///VectorGallery.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/PersonalWebsite/Pages/Index.razor" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/PersonalWebsite/Pages/Webtoys/FlexboxDesigner.razor" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///VectorGallery.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/PersonalWebsite/Pages/Static/VectorGallery.razor" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="mock:///VectorGallery.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Index.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/PersonalWebsite/Pages/Static/VectorGallery.razor" />
+        <option value="$PROJECT_DIR$/PersonalWebsite/wwwroot/css/site.css" />
+        <option value="$PROJECT_DIR$/PersonalWebsite/Pages/Index.razor" />
       </list>
     </option>
   </component>
@@ -108,7 +116,7 @@
       <option name="presentableId" value="Default" />
       <updated>1594295244162</updated>
       <workItem from="1594295446887" duration="121000" />
-      <workItem from="1595164620467" duration="1920000" />
+      <workItem from="1595164620467" duration="3551000" />
     </task>
     <task id="LOCAL-00001" summary="Re-indent with tabs, Join two &lt;h5&gt;s together, Fix issue with image messing up justification on small screens">
       <created>1595165476848</created>
@@ -124,7 +132,21 @@
       <option name="project" value="LOCAL" />
       <updated>1595165531131</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Re-indent with tabs, Join two &lt;h5&gt;s together, Fix issue with image messing up justification on small screens">
+      <created>1595171580475</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1595171580476</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Fixed disobedient &lt;a&gt; margins in VectorGallery.razor, made some extra space underneath lists in Index.razor">
+      <created>1595172278853</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1595172278853</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,7 +168,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Re-indent with tabs, Join two &lt;h5&gt;s together, Fix issue with image messing up justification on small screens" />
-    <option name="LAST_COMMIT_MESSAGE" value="Re-indent with tabs, Join two &lt;h5&gt;s together, Fix issue with image messing up justification on small screens" />
+    <MESSAGE value="Fixed disobedient &lt;a&gt; margins in VectorGallery.razor, made some extra space underneath lists in Index.razor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed disobedient &lt;a&gt; margins in VectorGallery.razor, made some extra space underneath lists in Index.razor" />
   </component>
   <component name="WindowStateProjectService">
     <state x="416" y="206" width="1046" height="660" key="#ASP.NET_(Razor)" timestamp="1595164948591">
@@ -177,9 +200,13 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="585" y="222" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1595165146832" />
-    <state x="769" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1595165252641">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1595172337127">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="769" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1595165252641" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1595172337127" />
+    <state x="769" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1595172692496">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="769" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1595172692496" />
   </component>
 </project>
