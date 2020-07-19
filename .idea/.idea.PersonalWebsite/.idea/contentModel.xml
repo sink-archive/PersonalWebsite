@@ -44,7 +44,6 @@
           <e p="Webtoys" t="Include">
             <e p="Calculator.razor" t="Include" />
             <e p="DoubleOrNothing.razor" t="Include" />
-            <e p="FlexboxDesigner.razor" t="Include" />
           </e>
         </e>
         <e p="PersonalWebsite.csproj" t="IncludeRecursive" />
