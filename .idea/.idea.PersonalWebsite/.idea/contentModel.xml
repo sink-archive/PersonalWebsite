@@ -31,7 +31,6 @@
           <e p="Webtoys" t="Include">
             <e p="Calculator.razor" t="Include" />
             <e p="DoubleOrNothing.razor" t="Include" />
-            <e p="FlexboxDesigner.razor" t="Include" />
           </e>
           <e p="_Host.cshtml" t="Include" />
         </e>
