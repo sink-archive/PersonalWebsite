@@ -1,7 +1,119 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc32c323-5d42-4b5f-b140-e129c0c750c4" name="Default Changelist" comment="" />
+    <list default="true" id="fc32c323-5d42-4b5f-b140-e129c0c750c4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/PersonalWebsite/Pages/Static/Jailbreak.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PersonalWebsite/.idea/.idea.PersonalWebsite.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PersonalWebsite/.idea/.idea.PersonalWebsite.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PersonalWebsite/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PersonalWebsite/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PersonalWebsite/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PersonalWebsite/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PersonalWebsite/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PersonalWebsite/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PersonalWebsite/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PersonalWebsite/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PersonalWebsite/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PersonalWebsite/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PersonalWebsite/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PersonalWebsite/.idea/projectSettingsUpdater.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PersonalWebsite/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PersonalWebsite/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PersonalWebsite/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PersonalWebsite/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PersonalWebsite/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PersonalWebsite/riderModule.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite.sln" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/.config/dotnet-tools.json" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/.config/dotnet-tools.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/App.razor" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/App.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/Artwork.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/Artwork.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/Gravatar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/Gravatar.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/Pages/Error.razor" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/Pages/Error.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/Pages/Index.razor" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/Pages/Index.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/Pages/Static/ChromeOs.razor" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/Pages/Static/ChromeOs.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/Pages/Static/CsPurge.razor" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/Pages/Static/CsPurge.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/Pages/Static/DiscordFonts.razor" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/Pages/Static/DiscordFonts.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/Pages/Static/FDP.razor" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/Pages/Static/FDP.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/Pages/Static/MassMultiplier.razor" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/Pages/Static/MassMultiplier.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/Pages/Static/PainOfPython.razor" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/Pages/Static/PainOfPython.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/Pages/Static/Powerpoint.razor" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/Pages/Static/Powerpoint.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/Pages/Static/RunPlusPlus.razor" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/Pages/Static/RunPlusPlus.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/Pages/Static/SortingCs.razor" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/Pages/Static/SortingCs.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/Pages/Static/SourceMapInstaller.razor" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/Pages/Static/SourceMapInstaller.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/Pages/Static/UnityGames.razor" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/Pages/Static/UnityGames.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/Pages/Static/VectorGallery.razor" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/Pages/Static/VectorGallery.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/Pages/Static/WebToys.razor" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/Pages/Static/WebToys.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/Pages/Static/YtdlGui.razor" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/Pages/Static/YtdlGui.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/Pages/Webtoys/Calculator.razor" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/Pages/Webtoys/Calculator.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/Pages/Webtoys/DoubleOrNothing.razor" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/Pages/Webtoys/DoubleOrNothing.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/Pages/Webtoys/FlexboxDesigner.razor" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/Pages/Webtoys/FlexboxDesigner.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/Pages/_Host.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/Pages/_Host.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/PersonalWebsite.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/PersonalWebsite.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/PersonalWebsite.csproj.user" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/PersonalWebsite.csproj.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/Properties/PublishProfiles/FolderProfile.pubxml" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/Properties/PublishProfiles/FolderProfile.pubxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/Properties/PublishProfiles/FolderProfile.pubxml.user" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/Properties/PublishProfiles/FolderProfile.pubxml.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/Properties/launchSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/Shared/MainLayout.razor" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/Shared/MainLayout.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/Shared/NavMenu.razor" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/Shared/NavMenu.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/_Imports.razor" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/_Imports.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/appsettings.Development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/wwwroot/abstract_art/bitmap/abstract-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/wwwroot/abstract_art/bitmap/abstract-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/wwwroot/abstract_art/bitmap/abstract-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/wwwroot/abstract_art/bitmap/abstract-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/wwwroot/abstract_art/bitmap/abstract-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/wwwroot/abstract_art/bitmap/abstract-3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/wwwroot/abstract_art/bitmap/avatar/avatar.png" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/wwwroot/abstract_art/bitmap/avatar/avatar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/wwwroot/abstract_art/bitmap/avatar/avatar_classic.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/wwwroot/abstract_art/bitmap/avatar/avatar_classic.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/wwwroot/abstract_art/bitmap/avatar/avatar_contrast.png" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/wwwroot/abstract_art/bitmap/avatar/avatar_contrast.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/wwwroot/abstract_art/bitmap/avatar/avatar_dark.png" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/wwwroot/abstract_art/bitmap/avatar/avatar_dark.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/wwwroot/abstract_art/bitmap/mashups/chaos.png" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/wwwroot/abstract_art/bitmap/mashups/chaos.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/wwwroot/abstract_art/vector/abstract-1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/wwwroot/abstract_art/vector/abstract-1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/wwwroot/abstract_art/vector/abstract-2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/wwwroot/abstract_art/vector/abstract-2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/wwwroot/abstract_art/vector/abstract-3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/wwwroot/abstract_art/vector/abstract-3.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/wwwroot/abstract_art/vector/avatar/avatar.svg" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/wwwroot/abstract_art/vector/avatar/avatar.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/wwwroot/abstract_art/vector/avatar/avatar_contrast.svg" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/wwwroot/abstract_art/vector/avatar/avatar_contrast.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/wwwroot/abstract_art/vector/avatar/avatar_dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/wwwroot/abstract_art/vector/avatar/avatar_dark.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/wwwroot/abstract_art/vector/mashups/chaos.svg" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/wwwroot/abstract_art/vector/mashups/chaos.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/wwwroot/css/bootstrap/bootstrap-grid.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/wwwroot/css/bootstrap/bootstrap-grid.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/wwwroot/css/bootstrap/bootstrap-reboot.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/wwwroot/css/bootstrap/bootstrap-reboot.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/wwwroot/css/bootstrap/bootstrap-utilities.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/wwwroot/css/bootstrap/bootstrap-utilities.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/wwwroot/css/bootstrap/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/wwwroot/css/bootstrap/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/wwwroot/css/open-iconic/FONT-LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/wwwroot/css/open-iconic/FONT-LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/wwwroot/css/open-iconic/ICON-LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/wwwroot/css/open-iconic/ICON-LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/wwwroot/css/open-iconic/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/wwwroot/css/open-iconic/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/wwwroot/css/open-iconic/font/css/open-iconic-bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/wwwroot/css/open-iconic/font/css/open-iconic-bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/wwwroot/css/open-iconic/font/fonts/open-iconic.eot" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/wwwroot/css/open-iconic/font/fonts/open-iconic.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/wwwroot/css/open-iconic/font/fonts/open-iconic.otf" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/wwwroot/css/open-iconic/font/fonts/open-iconic.otf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/wwwroot/css/open-iconic/font/fonts/open-iconic.svg" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/wwwroot/css/open-iconic/font/fonts/open-iconic.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/wwwroot/css/open-iconic/font/fonts/open-iconic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/wwwroot/css/open-iconic/font/fonts/open-iconic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/wwwroot/css/open-iconic/font/fonts/open-iconic.woff" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/wwwroot/css/open-iconic/font/fonts/open-iconic.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/wwwroot/discord_fonts/font.bauhaus93.theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/wwwroot/discord_fonts/font.bauhaus93.theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/wwwroot/discord_fonts/font.comicsans.theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/wwwroot/discord_fonts/font.comicsans.theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/wwwroot/discord_fonts/font.impact.theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/wwwroot/discord_fonts/font.impact.theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/wwwroot/discord_fonts/font.jbmono.theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/wwwroot/discord_fonts/font.jbmono.theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/wwwroot/discord_fonts/font.mojangles.theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/wwwroot/discord_fonts/font.mojangles.theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/wwwroot/discord_fonts/font.papyrus.theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/wwwroot/discord_fonts/font.papyrus.theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/wwwroot/discord_fonts/font.segoe_ui_light.theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/wwwroot/discord_fonts/font.segoe_ui_light.theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/wwwroot/discord_fonts/font.times_new_roman.theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/wwwroot/discord_fonts/font.times_new_roman.theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/wwwroot/discord_fonts/font.txt.theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/wwwroot/discord_fonts/font.txt.theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/wwwroot/discord_fonts/font.wingdings.theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/wwwroot/discord_fonts/font.wingdings.theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/wwwroot/discord_fonts/packs/full.zip" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/wwwroot/discord_fonts/packs/full.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/wwwroot/discord_fonts/packs/not-serious.zip" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/wwwroot/discord_fonts/packs/not-serious.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/wwwroot/discord_fonts/packs/serious.zip" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/wwwroot/discord_fonts/packs/serious.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/wwwroot/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/wwwroot/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PersonalWebsite/wwwroot/js/bootstrap/bootstrap.bundle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/PersonalWebsite/wwwroot/js/bootstrap/bootstrap.bundle.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,10 +122,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/PersonalWebsite/App.razor" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/PersonalWebsite/Pages/Static/Jailbreak.razor" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/PersonalWebsite/Pages/Static/VectorGallery.razor" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/PersonalWebsite/Gravatar.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/PersonalWebsite/Pages/Index.razor" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/PersonalWebsite/Pages/Static/VectorGallery.razor" />
+        <option value="$PROJECT_DIR$/PersonalWebsite/Gravatar.cs" />
+        <option value="$PROJECT_DIR$/PersonalWebsite/Pages/Index.razor" />
+        <option value="$PROJECT_DIR$/PersonalWebsite/Pages/Static/Jailbreak.razor" />
       </list>
     </option>
   </component>
@@ -30,7 +153,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="sudo apt-get install libsecret-1-0 gnome-keyring" />
+    </option>
   </component>
   <component name="RunManager" selected=".NET Launch Settings Profile.PersonalWebsite">
     <configuration name="PersonalWebsite" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
@@ -75,11 +204,68 @@
       <option name="presentableId" value="Default" />
       <updated>1594295244162</updated>
       <workItem from="1594295446887" duration="121000" />
+      <workItem from="1595180951258" duration="509000" />
+      <workItem from="1595187120668" duration="65000" />
+      <workItem from="1595187486978" duration="251000" />
+      <workItem from="1595417378605" duration="238000" />
+      <workItem from="1595417924049" duration="974000" />
+      <workItem from="1595591949629" duration="1153000" />
+      <workItem from="1595593443342" duration="6217000" />
     </task>
     <servers />
   </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1318" height="167" key="GridCell.Tab.0.bottom" timestamp="1595181225572">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1318" height="167" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1595181225572" />
+    <state width="1318" height="167" key="GridCell.Tab.0.center" timestamp="1595181225569">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1318" height="167" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1595181225569" />
+    <state width="1318" height="167" key="GridCell.Tab.0.left" timestamp="1595181225568">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1318" height="167" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1595181225568" />
+    <state width="1318" height="167" key="GridCell.Tab.0.right" timestamp="1595181225571">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1318" height="167" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1595181225571" />
+    <state x="266" y="121" width="824" height="496" key="IDE.errors.dialog" timestamp="1595187584634">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="266" y="121" width="824" height="496" key="IDE.errors.dialog/0.0.1366.768@0.0.1366.768" timestamp="1595187584634" />
+    <state x="157" y="19" width="1022" height="700" key="SettingsEditor" timestamp="1595419411303">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="157" y="19" width="1022" height="700" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1595419411303" />
+    <state x="385" y="230" width="585" height="247" key="cloudConfig.PluginsDialog" timestamp="1595187527618">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="385" y="230" width="585" height="247" key="cloudConfig.PluginsDialog/0.0.1366.768@0.0.1366.768" timestamp="1595187527618" />
+    <state x="347" y="176" key="run.anything.popup" timestamp="1595181128482">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="347" y="176" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1595181128482" />
   </component>
 </project>

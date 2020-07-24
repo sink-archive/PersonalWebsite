@@ -1,0 +1,109 @@
+@page "/jailbreak"
+
+<div style="display: inline-block; margin-bottom: 1rem">
+	<h1>Jailbreaking Adventures...</h1>
+	<h3 style="text-align: right">...And Misadventures!</h3>
+</div>
+
+<h4>My first try: Unc0ver JB</h4>
+<h5>The setup</h5>
+<p>
+	I have an iPhone 6S, and in this case I was running iOS 13.5.
+	So, I used AltStore to install Unc0ver, and promptly hit that “Jailbreak” button.
+	Hey look, I’m Jailbroken!
+	Time to install Sileo, then <em>re-install</em> Cydia, then finally install Zebra and add some repos.
+</p>
+
+<h5>Stability</h5>
+<p>
+	Unc0ver is generally quite stable, and is really easy to use.
+	One big button to hit and you’re cool.
+	There are also advanced options for users who need them, such as removing the jailbreak and restoring the RootFS,
+	or re-installing Cydia, or even installing OpenSSH for you.
+</p>
+
+<h5>Problems Encountered</h5>
+<p>
+	At first, Unc0ver worked nicely, and all was well.
+	I could install tweaks, use AppSync with Filza to install IPAs, and clean out my storage with iCleaner.
+	However, eventually something broke.
+	All my jailbreak tweaks stopped working, and Unc0ver failed with the message “Unable to obtain entitlements.”
+</p>
+
+<h5>Resolution</h5>
+<p>
+	My first attempt to fix this was a Factory Reset.
+	<em>BAD IDEA...</em> You should <em>never</em> factory reset while jailbroken because it breaks everything.
+	Actual apple apps stopped working, Phone and Messages crashed, Contacts was blank, and Unc0ver itself remained broken.
+	One tethered update through iTunes, from 13.5 to 13.5.1 later, and I was back to a completely stock iOS experience,
+	except now there isn’t another update to save me in case of emergency.
+	In addition, Unc0ver doesn’t work on 13.5.1; with that, let’s move on to...
+</p>
+
+<h4>Trying again: Checkra1n</h4>
+<h5>The setup</h5>
+<p>
+	Same iPhone 6S as before, but now on iOS 13.5.1, I wanted to get Jailbroken again.
+	In search of a new method, my gaze shifted over to Checkra1n.
+	I needed to use a utility called “Bootra1n” (though there is an alternative called Checkn1x that I haven’t tried)
+	because I do not have a Mac or Linux PC, only Windows.
+	I flashed Bootra1n to a USB drive using Etcher, and booted to it.
+	I’m happy to say that it worked!
+</p>
+
+<h5>Stability (and presentation)</h5>
+<p>
+	Checkra1n is very stable.
+	Much more so than Unc0ver, even though Checkra1n’s site has a stability warning and Unc0ver doesn’t.
+	I almost feel like Unc0ver tries to pitch itself as a legit, safe thing to do,
+	while Checkra1n embraces the hacky, unstable nature and feel of jailbreaking.
+	Overall, Checkra1n is much more stable than Unc0ver.
+	I haven’t almost bricked my phone, and If something goes wrong and causes a respring loop, just reboot and you’re stock again.
+	I think people are more instinctively gonna reach for the hard reset (power+home on my device)
+	than the safe mode shortcut that they probably have no idea even exists (volume up).
+</p>
+
+<h5>Problems Encountered</h5>
+<p>
+	To nobody’s surprise, it turns out you can still cause respring loops, because the underlying tech is the same, just the exploit changed.
+	I found that if <em>Prysm</em> or <em>Quart</em> were installed, installing the jailbroken version of <em>Watusi for WhatsApp</em>,
+	would get you stuck in a respring loop. <small>Whoops.</small>
+</p>
+
+<h5>Resolution</h5>
+<p>
+	This can, however, be fixed easily.
+	Simply go into your package manager of choice and use the re-install option on <em>Quart, Prysm</em>, etc. after booting into Safe Mode.
+	Alternatively, install <em>Watusi</em>, and then do the reinstall before you even respring in the first place
+	(if your package manager supports it, that is. <small>Zebra best package manager</small>). 
+</p>
+
+
+<h4>To finish off...</h4>
+<p>
+	Overall, my experience with Jailbreaking has been mixed,
+	with my first experience being a bit of a fast-paced wild ride of tweak discovery,
+	and my current attempt being more of a laid-back routine of incrementally improving my experience.
+	Checkra1n may be tethered, but that allows it to be arguably more stable.
+	Unc0ver may not support iOS 13.5.1, but supports iPhone XS and up,
+	devices that have the Checkm8 exploit that Checkra1n relies on patched.
+</p>
+<p>
+	Finally, here’s my recommendation.
+	Both jailbreaks have their pros and cons, so if your device is supported,
+	hop over to <a href="//checkra.in/">checkra.in</a> and give it a whirl.
+	Otherwise look at either <a href="//unc0ver.dev/">unc0ver.dev</a> or <a href="//theodyssey.dev/">theodyssey.dev</a>
+	(though I haven’t tried this one, I’ve heard it’s quite good), and just take it a bit slow. 
+</p>
+
+<h4>My Tweaks</h4>
+<p>
+	I thought it would be a good way to end this by providing a list of my installed jailbreak tweaks, on iOS 13.5.1,
+	as well as which repos they came from.
+</p>
+<p>Thanks for reading!</p>
+
+<ul class="list-group" style="margin-bottom: 1rem">
+	<li class="list-group-item list-group-item-primary">Category Name</li>
+	<li class="list-group-item">Tweak Name<span class="badge bg-success rounded-pill" style="margin-left: 0.1rem">Repo Name</span></li>
+</ul>

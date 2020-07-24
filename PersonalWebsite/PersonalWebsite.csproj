@@ -8,4 +8,10 @@
     <Folder Include="wwwroot" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Update="Pages\Static\Jailbreak.razor">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+  </ItemGroup>
+
 </Project>
