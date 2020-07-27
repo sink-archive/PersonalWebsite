@@ -1,14 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="$USER_HOME$/.cache/JetBrains/Rider2020.1/extResources" t="IncludeRecursive" />
-    <e p="$USER_HOME$/.cache/JetBrains/Rider2020.1/resharper-host/local/Transient/ReSharperHost/v201/SolutionCaches/_PersonalWebsite.1492696146.00" t="ExcludeRecursive" />
-    <e p="$PROJECT_DIR$" t="IncludeFlat">
+    <e p="C:\Users\caina\AppData\Local\JetBrains\Rider2020.1\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\caina\AppData\Local\JetBrains\Rider2020.1\resharper-host\Local\Transient\ReSharperHost\v201\SolutionCaches\_PersonalWebsite.1575967561.00" t="ExcludeRecursive" />
+    <e p="C:\Users\caina\source\repos\PersonalWebsite" t="IncludeFlat">
+      <e p=".git\info\exclude" t="IncludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
       <e p="PersonalWebsite" t="IncludeRecursive">
+        <e p="_Imports.razor" t="Include" />
         <e p="App.razor" t="Include" />
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
         <e p="Artwork.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
         <e p="Gravatar.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="PersonalWebsite.AssemblyInfo.cs" t="Include" />
+              <e p="PersonalWebsite.RazorAssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
         <e p="Pages" t="Include">
+          <e p="_Host.cshtml" t="Include" />
           <e p="Error.razor" t="Include" />
           <e p="Index.razor" t="Include" />
           <e p="Static" t="Include">
@@ -32,33 +47,20 @@
             <e p="Calculator.razor" t="Include" />
             <e p="DoubleOrNothing.razor" t="Include" />
           </e>
-          <e p="_Host.cshtml" t="Include" />
         </e>
         <e p="PersonalWebsite.csproj" t="IncludeRecursive" />
         <e p="Program.cs" t="Include" />
         <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
           <e p="PublishProfiles" t="Include">
             <e p="FolderProfile.pubxml" t="Include" />
           </e>
-          <e p="launchSettings.json" t="Include" />
         </e>
         <e p="Shared" t="Include">
           <e p="MainLayout.razor" t="Include" />
           <e p="NavMenu.razor" t="Include" />
         </e>
         <e p="Startup.cs" t="Include" />
-        <e p="_Imports.razor" t="Include" />
-        <e p="appsettings.Development.json" t="Include" />
-        <e p="appsettings.json" t="Include" />
-        <e p="bin" t="ExcludeRecursive" />
-        <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
-            <e p="netcoreapp3.1" t="Include">
-              <e p="PersonalWebsite.AssemblyInfo.cs" t="Include" />
-              <e p="PersonalWebsite.RazorAssemblyInfo.cs" t="Include" />
-            </e>
-          </e>
-        </e>
         <e p="wwwroot" t="Include">
           <e p="abstract_art" t="Include">
             <e p="bitmap" t="Include">
@@ -97,9 +99,6 @@
               <e p="bootstrap.min.css" t="Include" />
             </e>
             <e p="open-iconic" t="Include">
-              <e p="FONT-LICENSE" t="Include" />
-              <e p="ICON-LICENSE" t="Include" />
-              <e p="README.md" t="Include" />
               <e p="font" t="Include">
                 <e p="css" t="Include">
                   <e p="open-iconic-bootstrap.min.css" t="Include" />
@@ -112,6 +111,9 @@
                   <e p="open-iconic.woff" t="Include" />
                 </e>
               </e>
+              <e p="FONT-LICENSE" t="Include" />
+              <e p="ICON-LICENSE" t="Include" />
+              <e p="README.md" t="Include" />
             </e>
             <e p="site.css" t="Include" />
           </e>
@@ -141,7 +143,6 @@
         </e>
       </e>
       <e p="PersonalWebsite.sln" t="IncludeFlat" />
-      <e p="packages" t="ExcludeRecursive" />
     </e>
   </component>
 </project>
