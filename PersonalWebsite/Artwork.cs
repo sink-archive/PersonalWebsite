@@ -1,8 +1,6 @@
-using System;
-
 namespace PersonalWebsite
 {
-    class Artwork
+    public class Artwork
     {
         public Artwork(string name, string relativeSvgUrl, string relativePngUrl, int width, int height)
         {
