@@ -1,5 +1,3 @@
-using System;
-
 namespace PersonalWebsite.Models
 {
     public class ErrorViewModel
