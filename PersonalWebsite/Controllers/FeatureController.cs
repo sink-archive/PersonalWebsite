@@ -4,6 +4,7 @@ using Microsoft.Net.Http.Headers;
 using PersonalWebsite.Models;
 using System.Collections.Generic;
 using UAParser;
+using static PersonalWebsite.UserAgentData;
 
 namespace PersonalWebsite.Controllers
 {
@@ -29,15 +30,17 @@ namespace PersonalWebsite.Controllers
 
         public IActionResult CanIJailbreak()
         {
-            var ua = HttpContext.Request.Headers[HeaderNames.UserAgent][0];
-            var uaParser = Parser.GetDefault();
-            var c = uaParser.Parse(ua);
+            GetUserAgent(HttpContext);
 
             // generate ViewModel
             var vm = new CanIJailbreakViewModel
             {
-                UserAgent = $"OS: {c.OS.Family}; Major Version: {c.OS.Major}; Minor Version: {c.OS.Minor}; " +
-                            $"Device Family: {c.Device.Family}; Device Brand: {c.Device.Brand}; Device Model: {c.Device.Model}"
+                OS = UserOs,
+                DeviceType = UserDeviceType,
+                MajorVer = UserOsMajorVer,
+                MinorVer = UserOsMinorVer,
+                PatchVer = UserOsPatchVer,
+                MinorPatchVer = UserOsMinorPatchVer
             };
 
             return View(vm);

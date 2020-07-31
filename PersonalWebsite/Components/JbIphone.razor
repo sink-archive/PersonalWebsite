@@ -1,0 +1,68 @@
+﻿@using static UserAgentData;
+
+@if (Show)
+{
+    @if (Jailbreakable)
+    {
+        @if (AltMethod == null)
+        {
+            <h3>You can jailbreak using <a href="@MethodSiteUrl">@MethodName</a>.</h3>
+        }
+        else
+        {
+            <h3>You can jailbreak using <a href="@MethodSiteUrl">@MethodName</a>, or with <a href="@AltMethodUrl">@AltMethod</a></h3>
+        }
+    }
+    else
+    {
+        <h3>You cannot Jailbreak, unfortunately.</h3>
+    }
+}
+
+<div class="list-group">
+    <button type="button" class="list-group-item" @onclick="() => Iphone1235Se()">
+        iPhone 1235SE
+    </button>
+    <button type="button" class="list-group-item" @onclick="Iphone56Max">
+        iPhone 56 Max
+    </button>
+</div>
+
+<p>(These are examples not real phones)</p>
+
+@code {
+    bool Show;
+    bool Jailbreakable;
+    string MethodSiteUrl;
+    string MethodName;
+    string AltMethod = null;
+    string AltMethodUrl;
+
+    void Iphone1235Se()
+    {
+        Show = true;
+        Jailbreakable = true;
+
+        MethodName = "Checkra1n";
+        MethodSiteUrl = "//checkra.in";
+    }
+
+    void Iphone56Max()
+    {
+        Show = true;
+        if ($"{UserOsMajorVer};{UserOsMinorVer};{UserOsPatchVer}" == "13;5;1")
+        {
+            Jailbreakable = false;
+        }
+        else
+        {
+            Jailbreakable = true;
+            
+            MethodName = "Unc0ver";
+            MethodSiteUrl = "//unc0ver.dev";
+
+            AltMethod = "Odyssey";
+            AltMethodUrl = "//theodyssey.dev";
+        }
+    }
+}

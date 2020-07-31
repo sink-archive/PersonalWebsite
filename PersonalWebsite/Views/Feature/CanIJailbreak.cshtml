@@ -1,8 +1,38 @@
-﻿@model CanIJailbreakViewModel
+﻿@using PersonalWebsite.Components
+@model CanIJailbreakViewModel
 @{
     ViewData["Title"] = "Can I JB?";
 }
 
-User Agent:
-<br /><br /><br />
-@Model.UserAgent
+<h1 class="display-3">Can I Jailbreak?</h1>
+
+<p><em><strong>Please visit this site in Safari or we will be unable to get your full iOS version.</strong></em></p>
+
+<p>@Model.FriendlyUserAgent</p>
+
+@if (Model.DeviceType == "iPhone")
+{
+    <h4>Looks like you're on an iPhone!</h4>
+    <p>Please choose your device from the list below.</p>
+    @(await Html.RenderComponentAsync<JbIphone>(RenderMode.ServerPrerendered))
+}
+else if (Model.DeviceType == "iPod")
+{
+    <h4>Looks like you're on an iPod Touch!</h4>
+    <p>Please choose your device from the list below.</p>
+    @(await Html.RenderComponentAsync<JbIphone>(RenderMode.ServerPrerendered))
+}
+else if (Model.DeviceType == "iPad")
+{
+    <h4>Looks like you're on an iPad!</h4>
+    <p>Please choose your device from the list below.</p>
+    @(await Html.RenderComponentAsync<JbIphone>(RenderMode.ServerPrerendered))
+}
+else
+{
+    <h4>Looks like you're on a non-iOS device!</h4>
+    <p>Visit this page on your iPhone, iPad, or iPod Touch.</p>
+    @(await Html.RenderComponentAsync<JbIphone>(RenderMode.ServerPrerendered))
+}
+
+<script src="_framework/blazor.server.js"></script>
