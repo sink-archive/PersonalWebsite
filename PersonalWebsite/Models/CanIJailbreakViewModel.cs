@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System.Collections.Generic;
 using System.Text;
 
 namespace PersonalWebsite.Models
@@ -33,5 +33,9 @@ namespace PersonalWebsite.Models
             separator ??= "";
             if (value != string.Empty && value != null && value != "Other") sb.Append(separator + value);
         }
+
+        public List<JbStatus> Iphones;
+        public List<JbStatus> Ipads;
+        public List<JbStatus> Ipods;
     }
 }

@@ -1,9 +1,6 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Net.Http.Headers;
+﻿using Microsoft.AspNetCore.Mvc;
 using PersonalWebsite.Models;
 using System.Collections.Generic;
-using UAParser;
 using static PersonalWebsite.UserAgentData;
 
 namespace PersonalWebsite.Controllers
@@ -32,6 +29,8 @@ namespace PersonalWebsite.Controllers
         {
             GetUserAgent(HttpContext);
 
+            var unc0verNonsupportedVersions = new List<string>{ "13.5.1", "12.3", "12.3.1", "12.3.2", "12.4.2", "12.4.3", "12.4.4", "12.4.5" };
+
             // generate ViewModel
             var vm = new CanIJailbreakViewModel
             {
@@ -40,7 +39,30 @@ namespace PersonalWebsite.Controllers
                 MajorVer = UserOsMajorVer,
                 MinorVer = UserOsMinorVer,
                 PatchVer = UserOsPatchVer,
-                MinorPatchVer = UserOsMinorPatchVer
+                MinorPatchVer = UserOsMinorPatchVer,
+
+                Iphones = new List<JbStatus>
+                {
+                    // Checkra1n-able devices
+                    new JbStatus("iPhone 5S", new List<string>(), "Checkra1n", "//checkra.in"),
+                    new JbStatus("iPhone 6 Plus", new List<string>(), "Checkra1n", "//checkra.in"),
+                    new JbStatus("iPhone 6S", new List<string>(), "Checkra1n", "//checkra.in"),
+                    new JbStatus("iPhone 6S Plus", new List<string>(), "Checkra1n", "//checkra.in"),
+                    new JbStatus("iPhone SE (2016)", new List<string>(), "Checkra1n", "//checkra.in"),
+                    new JbStatus("iPhone 7", new List<string>(), "Checkra1n", "//checkra.in"),
+                    new JbStatus("iPhone 7 Plus", new List<string>(), "Checkra1n", "//checkra.in"),
+                    new JbStatus("iPhone 8", new List<string>(), "Checkra1n", "//checkra.in"),
+                    new JbStatus("iPhone 8 Plus", new List<string>(), "Checkra1n", "//checkra.in"),
+                    new JbStatus("iPhone X", new List<string>(), "Checkra1n", "//checkra.in"),
+                    // Non-Checkra1n-able devices
+                    new JbStatus("iPhone XR", unc0verNonsupportedVersions, "Unc0ver", "//unc0ver.dev", "Odyssey", "//theodyssey.dev"),
+                    new JbStatus("iPhone XS", unc0verNonsupportedVersions, "Unc0ver", "//unc0ver.dev", "Odyssey", "//theodyssey.dev"),
+                    new JbStatus("iPhone XS Max", unc0verNonsupportedVersions, "Unc0ver", "//unc0ver.dev", "Odyssey", "//theodyssey.dev"),
+                    new JbStatus("iPhone 11", unc0verNonsupportedVersions, "Unc0ver", "//unc0ver.dev", "Odyssey", "//theodyssey.dev"),
+                    new JbStatus("iPhone 11 Pro", unc0verNonsupportedVersions, "Unc0ver", "//unc0ver.dev", "Odyssey", "//theodyssey.dev"),
+                    new JbStatus("iPhone 11 Pro Max", unc0verNonsupportedVersions, "Unc0ver", "//unc0ver.dev", "Odyssey", "//theodyssey.dev"),
+                    new JbStatus("iPhone SE (2020)", unc0verNonsupportedVersions, "Unc0ver", "//unc0ver.dev", "Odyssey", "//theodyssey.dev")
+                }
             };
 
             return View(vm);
