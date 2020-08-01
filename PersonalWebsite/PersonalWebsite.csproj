@@ -5,12 +5,54 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot" />
+    <PackageReference Include="UAParser" Version="3.1.44" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Update="Pages\Static\Jailbreak.razor">
-      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    <Content Update="wwwroot\abstract_art\bitmap\abstract-1.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\abstract_art\bitmap\abstract-2.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\abstract_art\bitmap\abstract-3.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\abstract_art\bitmap\avatar\avatar.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\abstract_art\bitmap\avatar\avatar_classic.jpeg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\abstract_art\bitmap\avatar\avatar_contrast.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\abstract_art\bitmap\avatar\avatar_dark.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\abstract_art\bitmap\mashups\chaos.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\abstract_art\vector\abstract-1.svg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\abstract_art\vector\abstract-2.svg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\abstract_art\vector\abstract-3.svg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\abstract_art\vector\avatar\avatar.svg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\abstract_art\vector\avatar\avatar_contrast.svg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\abstract_art\vector\avatar\avatar_dark.svg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\abstract_art\vector\mashups\chaos.svg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
 

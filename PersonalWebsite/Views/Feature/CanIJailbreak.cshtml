@@ -1,0 +1,163 @@
+﻿@model CanIJailbreakViewModel
+@{
+    ViewData["Title"] = "Can I JB?";
+}
+
+<h1 class="display-3">Can I Jailbreak?</h1>
+
+<h4><em><strong>Please visit this site in Safari or we will be unable to get your full iOS version.</strong></em></h4>
+
+<p>@Model.FriendlyUserAgent</p>
+
+@if (Model.DeviceType == "iPhone")
+{
+    <h4>Looks like you're on an iPhone!</h4>
+    <p>Please choose the option containing the name of your device, and based on your iOS version, we will tell you if you can jailbreak, and how.</p>
+
+    <div class="accordion" id="IphoneAccordion">
+        @{var i = 0;}
+        @foreach (var Iphone in Model.Iphones)
+        {
+            i++;
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse_@i" aria-expanded="true" aria-controls="collapseOne">
+                            @Iphone.Name
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapse_@i" class="collapse" aria-labelledby="headingOne" data-parent="#IphoneAccordion">
+                    <div class="card-body">
+
+                        @{
+                            var version = Model.PatchVer == null ? $"{Model.MajorVer}.{Model.MinorVer}" : $"{Model.MajorVer}.{Model.MinorVer}.{Model.PatchVer}";
+                            if (!Iphone.Jailbreakable(version))
+                            {
+                                if (Iphone.AltMethod == null)
+                                {
+                                    <p>You can jailbreak with <a target="_blank" href="@Iphone.MethodUrl">@Iphone.Method</a>.</p>
+                                }
+                                else
+                                {
+                                    <p>
+                                        You can jailbreak with <a target="_blank" href="@Iphone.MethodUrl">@Iphone.Method</a>,
+                                        or <a target="_blank" href="@Iphone.AltMethodUrl">@Iphone.AltMethod</a>.
+                                    </p>
+                                }
+                            }
+                            else
+                            {
+                                <p>You cannot jailbreak :(</p>
+                            }
+                        }
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+}
+else if (Model.DeviceType == "iPod")
+{
+    <h4>Looks like you're on an iPod Touch!</h4>
+    <p>Please choose your device from the list below.</p>
+
+    <div class="accordion" id="IpodAccordion">
+        @{var i = 0;}
+        @foreach (var Ipod in Model.Ipods)
+        {
+            i++;
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse_@i" aria-expanded="true" aria-controls="collapseOne">
+                            @Ipod.Name
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapse_@i" class="collapse" aria-labelledby="headingOne" data-parent="#IpodAccordion">
+                    <div class="card-body">
+
+                        @{
+                            var version = Model.PatchVer == null ? $"{Model.MajorVer}.{Model.MinorVer}" : $"{Model.MajorVer}.{Model.MinorVer}.{Model.PatchVer}";
+                            if (!Ipod.Jailbreakable(version))
+                            {
+                                if (Ipod.AltMethod == null)
+                                {
+                                    <p>You can jailbreak with <a target="_blank" href="@Ipod.MethodUrl">@Ipod.Method</a>.</p>
+                                }
+                                else
+                                {
+                                    <p>
+                                        You can jailbreak with <a target="_blank" href="@Ipod.MethodUrl">@Ipod.Method</a>,
+                                        or <a target="_blank" href="@Ipod.AltMethodUrl">@Ipod.AltMethod</a>.
+                                    </p>
+                                }
+                            }
+                            else
+                            {
+                                <p>You cannot jailbreak :(</p>
+                            }
+                        }
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+}
+else if (Model.DeviceType == "iPad")
+{
+    <h4>Looks like you're on an iPad!</h4>
+    <p>Please choose your device from the list below.</p>
+
+    <div class="accordion" id="IpadAccordion">
+        @{var i = 0;}
+        @foreach (var Ipad in Model.Ipads)
+        {
+            i++;
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse_@i" aria-expanded="true" aria-controls="collapseOne">
+                            @Ipad.Name
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapse_@i" class="collapse" aria-labelledby="headingOne" data-parent="#IpadAccordion">
+                    <div class="card-body">
+
+                        @{
+                            var version = Model.PatchVer == null ? $"{Model.MajorVer}.{Model.MinorVer}" : $"{Model.MajorVer}.{Model.MinorVer}.{Model.PatchVer}";
+                            if (!Ipad.Jailbreakable(version))
+                            {
+                                if (Ipad.AltMethod == null)
+                                {
+                                    <p>You can jailbreak with <a target="_blank" href="@Ipad.MethodUrl">@Ipad.Method</a>.</p>
+                                }
+                                else
+                                {
+                                    <p>
+                                        You can jailbreak with <a target="_blank" href="@Ipad.MethodUrl">@Ipad.Method</a>,
+                                        or <a target="_blank" href="@Ipad.AltMethodUrl">@Ipad.AltMethod</a>.
+                                    </p>
+                                }
+                            }
+                            else
+                            {
+                                <p>You cannot jailbreak :(</p>
+                            }
+                        }
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+}
+else
+{
+    <h4>Looks like you're on a non-iOS device!</h4>
+    <p>Visit this page on your iPhone, iPad, or iPod Touch.</p>
+}
