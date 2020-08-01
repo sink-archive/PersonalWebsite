@@ -62,6 +62,41 @@ namespace PersonalWebsite.Controllers
                     new JbStatus("iPhone 11 Pro", unc0verNonsupportedVersions, "Unc0ver", "//unc0ver.dev", "Odyssey", "//theodyssey.dev"),
                     new JbStatus("iPhone 11 Pro Max", unc0verNonsupportedVersions, "Unc0ver", "//unc0ver.dev", "Odyssey", "//theodyssey.dev"),
                     new JbStatus("iPhone SE (2020)", unc0verNonsupportedVersions, "Unc0ver", "//unc0ver.dev", "Odyssey", "//theodyssey.dev")
+                },
+                
+                Ipads = new List<JbStatus>
+                {
+                    // Main line iPads
+                    new JbStatus("iPad", new List<string>(), "Checkra1n", "//checkra.in"),
+                    new JbStatus("iPad 2", new List<string>(), "Checkra1n", "//checkra.in"),
+                    new JbStatus("iPad 3", new List<string>(), "Checkra1n", "//checkra.in"),
+                    new JbStatus("iPad 4", new List<string>(), "Checkra1n", "//checkra.in"),
+                    new JbStatus("iPad 9.7in (2018)", new List<string>(), "Checkra1n", "//checkra.in"),
+                    new JbStatus("iPad 10.2in (2019)", new List<string>(), "Checkra1n", "//checkra.in"),
+
+                    // iPad Airs
+                    new JbStatus("iPad Air", new List<string>(), "Checkra1n", "//checkra.in"),
+                    new JbStatus("iPad Air 2", new List<string>(), "Checkra1n", "//checkra.in"),
+                    new JbStatus("iPad Air (2019)", new List<string>(), "Checkra1n", "//checkra.in"),
+
+                    // iPad Minis
+                    new JbStatus("iPad Mini", new List<string>(), "Checkra1n", "//checkra.in"),
+                    new JbStatus("iPad Mini 2 /w Retina Display", new List<string>(), "Checkra1n", "//checkra.in"),
+                    new JbStatus("iPad Mini 3", new List<string>(), "Checkra1n", "//checkra.in"),
+                    new JbStatus("iPad Mini 4", new List<string>(), "Checkra1n", "//checkra.in"),
+                    new JbStatus("iPad Mini (2019)", new List<string>(), "Checkra1n", "//checkra.in"),
+
+                    // iPad Pros
+                    new JbStatus("iPad Pro 9.7in (2016)", new List<string>(), "Checkra1n", "//checkra.in"),
+                    new JbStatus("iPad Pro 10.5in (2017)", new List<string>(), "Checkra1n", "//checkra.in"),
+                    new JbStatus("iPad Pro 12.9in (2017)", new List<string>(), "Checkra1n", "//checkra.in"),
+                    new JbStatus("iPad Pro 11in (2018)", new List<string>(), "Checkra1n", "//checkra.in"),
+                    new JbStatus("iPad Pro 12.9in (2018)", new List<string>(), "Checkra1n", "//checkra.in")
+                },
+
+                Ipods = new List<JbStatus>
+                {
+                    new JbStatus("iPod Touch 7th Generation", new List<string>(), "Checkra1n", "//checkra.in")
                 }
             };
 
