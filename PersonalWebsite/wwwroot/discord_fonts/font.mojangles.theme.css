@@ -1,0 +1,13 @@
+/**
+
+ * @name Mojangles
+ * @version 1.0
+ * @description Use Mojangles (the minecraft font) in Discord.
+ * @authorId 435026627907420161
+ * @author Yellowsink
+
+**/
+
+* {
+	font-family: "Mojangles" !important;
+}
