@@ -8,6 +8,6 @@
 
 **/
 
-* {
+*:not(code):not(span) {
 	font-family: "Times New Roman" !important;
 }
