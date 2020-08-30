@@ -1,0 +1,84 @@
+﻿@{
+	ViewData["Title"] = "Adventures in USB Boot";
+}
+
+<h1 class="display-3">Adventures in booting from live media.</h1>
+
+<p>
+	As it turns out, booting to a USB drive can often be more of a challenge than you may think.
+	Many BIOS/UEFI manufacturers do not accommodate for what <em>should be</em> a simple task.
+	This is an issue mainly with newer PCs, for example my old HP laptop from around 2013 boots to anything quickly and easily.
+</p>
+
+<p>
+	Where things start to fall apart, however, is the intersection between more modern machines, and computers designed for consumers primarily.
+	That HP laptop is a business-targeted machine, making USB boot a useful feature. But not all computers are like this.
+</p>
+
+<p>
+	I have four examples I want to share. First of all: my PC with a Gigabyte motherboard.
+	This one does an admirable job of booting other devices.
+	Simply mash a key (F9 I think), and it even tells you which keys to press if you read the boot screen fast enough.
+</p>
+
+<p>
+	One thing that surprised me was that it booted fine from the <em>front I/O</em> as well as the back ports.
+</p>
+
+<p>
+	Something a little tougher is a Mac, which can still actually boot other media,
+	but you have to know which two keys to mash, which is different depending on your machine.
+	(you can install a bootloader like rEFInd if you need easier access to OSes like Linux).
+	Where it gets trickier is with modern NVMe SSD-equipped machines that boot way too fast for a simple keypress.
+</p>
+
+<p>
+	Case-in-point: my Asus laptop. It boots really quickly thanks to a feature called “Fast Boot”,
+	but I couldn’t actually figure out how to boot my live media of Linux, but here’s what I tried.
+	First: get into the UEFI settings (I’ll call it the BIOS from now on for simplicity even though it’s incorrect).
+	To do this you first have to open up Windows 10’s settings (Win+I), then go to Windows Update, then Recovery,
+	and under “Advanced start-up” choose Restart Now.
+	This takes you to the advanced boot screen. From here choose: “Troubleshoot” then “Advanced” then “UEFI settings” then finally hit Restart.
+</p>
+
+<p>
+	From here Fast Boot can be disabled. You will then reboot (slightly slower) into Windows,
+	where you have to repeat the process but instead of “UEFI Settings” you need to choose to “Use a Device” at whichever sub-menu it’s in.
+	Finally choose your Flash Drive, DVD, whatever, and you will be rebooted into… <em>Windows. GREAT.</em>
+</p>
+
+<p>
+	So… Asus have some work to do making their BIOS <em>actually work.</em>
+</p>
+
+<p>
+	Finally, I’ll talk about Chromebooks; specifically, I’m going to choose the AMD-powered HP Chromebook 14.
+	This thing is a pain in the ass to use for anything other than ChromeOS.
+	You need to: First, enable Developer Mode with a special key combo at boot, wiping all your data in the process.
+	You will also need to press a key combo on each boot to keep this mode.
+	Now, type a command in the console to unlock Legacy Boot mode.
+	Press a different combo at boot with your USB plugged in,
+	and you will discover that Google broke the code that boots to Legacy drives
+	(and no you can’t use UEFI to boot external drives with ChromeOS’s bootloader).
+</p>
+
+<p>
+	It turns out this is only possible through hardware modifications.
+	You need to either: (A) take out a screw from the motherboard, remove a button battery,
+	or desolder a chip to allow you to use MrChromeBox’s script to allow installing any OS,
+	or (B) buy a special cable called a <em>Suzy-Q Cable</em>, plug the chromebook into itself,
+	making sure to get the right USB-C port in the right orientation
+	(because unlike every other USB-C cable ever this one is not reversible, get it wrong and it’s just a standard cable),
+	then use that instead to disable the chip that locks off the function.
+</p>
+
+<p>
+	Long story short, booting external drives in a pain. It could be easy, and once it was,
+	but a combination of faster boots, growth of what I call the <em>Mac mentality</em> (or <em>Apple mentality</em>),
+	that consumers don’t care how their computer works, as long as it does, and negligence on the part of OEMs,
+	causing modern machines to be painful for anything other than what’s already installed.
+</p>
+
+<p>
+	I'm just annoyed at tech for being designed for the everyday person, I guess.
+</p>

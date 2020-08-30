@@ -11,5 +11,7 @@ namespace PersonalWebsite.Controllers
         public IActionResult Python() => View();
 
         public IActionResult Powerpoint() => View();
+
+        public IActionResult UsbBoot() => View();
     }
 }

@@ -54,6 +54,10 @@
     <Content Update="wwwroot\abstract_art\vector\mashups\chaos.svg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Content>
+    <Content Update="Views\Article\UsbBoot.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>
