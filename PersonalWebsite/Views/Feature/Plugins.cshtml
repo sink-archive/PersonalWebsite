@@ -1,0 +1,68 @@
+﻿@model PluginsViewModel
+@{
+	ViewData["Title"] = "My favourite plugins";
+}
+
+<h1 class="display-3">My favourite plugins.</h1>
+
+<h3 class="display-6">Synths</h3>
+
+<table class="table table-bordered table-hover">
+	<thead>
+	<tr>
+		<th>Name</th>
+        	<th>Developer</th>
+        	<th>Type</th>
+        	<th>Extra Info</th>
+	</tr>
+	</thead>
+	<tbody>
+		@foreach (var plugin in Model.Synths)
+	    {
+		    <tr>
+			    @if (@plugin.Link == null)
+			    {
+				    <td>@plugin.Name</td>
+			    }
+			    else
+			    {
+				    <td><a href="@plugin.Link">@plugin.Name</a></td>
+			    }
+			    <td>@plugin.Developer</td>
+			    <td>@plugin.Type</td>
+			    <td>@plugin.Info</td>
+		    </tr>
+	    }
+	</tbody>
+</table>
+
+<h3 class="display-6">Effects</h3>
+
+<table class="table table-bordered table-hover">
+	<thead>
+	<tr>
+		<th>Name</th>
+		<th>Developer</th>
+		<th>Good Use Case(s)</th>
+		<th>Extra Info</th>
+	</tr>
+	</thead>
+	<tbody>
+	@foreach (var plugin in Model.Fx)
+	{
+		<tr>
+			@if (@plugin.Link == null)
+			{
+				<td>@plugin.Name</td>
+			}
+			else
+			{
+				<td><a href="@plugin.Link">@plugin.Name</a></td>
+			}
+			<td>@plugin.Developer</td>
+			<td>@plugin.UseCase</td>
+			<td>@plugin.Info</td>
+		</tr>
+	}
+	</tbody>
+</table>
