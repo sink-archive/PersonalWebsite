@@ -1,0 +1,209 @@
+@{
+	ViewData["Title"] = "Manjaro";
+}
+
+<h1 class="display-3">Getting started with Manjaro Linux</h1>
+<p>
+	Manjaro is an easy to use distribution of Linux based on Arch.
+	The nice bit of Manjaro is that you don’t have to tear your hair out installing and setting it up.
+	However, for first-time Linux users, and for people used to distros like Debian and Ubuntu,
+	there are some differences from what you’re used to.
+</p>
+<p><em>This guide will focus on Manjaro KDE, not Xfce or Gnome.</em></p>
+
+<h4>What does being Arch-based mean?</h4>
+<p>
+	Arch Linux is a popular, flexible distribution of Linux that is super stable.
+	It is known for being tedious to set up (don’t be put off, Manjaro has all the setup pre-done for you).
+</p>
+<p>
+	Almost any piece of software you can think of is available for Arch, and therefore Manjaro,
+	either on the official repository, or on the super diverse Arch User Repository (AUR).
+</p>
+
+<h4>Manjaro & KDE desktop orientation</h4>
+<p>
+	“What the hell is all this stuff on my screen and how do I use it?”
+	First up, there will most likely be a large black window open with green text.
+	This is Yakuake, the drop-down terminal. It is opened and closed with F12, so press that to get it out of the way.
+</p>
+<p>
+	To start your programs, click the Manjaro logo in the bottom corner, or press the Meta Key
+	(Windows key on most keyboards or Command on a Mac. Some users may know it as the Super Key).
+	You can see recently opened apps here, or mouse over the tabs at the bottom to explore your installed apps.
+	You can also type to search apps (just like Windows 10!). Note that on the desktop, you can also just
+	<em>start typing</em> to find apps.
+</p>
+<p>
+	To connect your Wi-Fi, click the wireless icon in the bottom right (to the left of the clock),
+	and choose your network to connect to.
+</p>
+<p>
+	Finally, I find that the mouse / trackpad sensitivity is a little high for my taste out of the box.
+	Let’s change this by opening System Settings (you should know how to open apps now)
+	and scroll the list on the left until, under “Hardware” you see an option titled “Input Devices”. 
+	Click on this, and then from the list that appears, choose either Mouse or Touchpad,
+	depending on whether you are using a laptop or desktop. Finally, just change the pointer speed.
+	You can also disable adaptive acceleration if you like, but I personally really like it on.
+</p>
+
+<h4>Software Setup: Web Browsing</h4>
+<p>
+	Firefox users will have a great experience out-of-the box in Manjaro, mainly because it’s already there.
+	Just launch it from the Application Launcher (Start Menu) or the taskbar and you’re done.
+</p>
+<p>
+	Chrome users will need to install it manually.
+	We will be installing Chromium, the open-source browser Chrome is based on.
+	Don’t worry, though it has a blue logo and a long name, it’s still essentially the same browser.
+</p>
+<h5>Chrome install – The easy way</h5>
+<p>
+	Load up the application sensibly named Add/Remove Software,
+	then click the magnifying glass in the top left and type “Chromium”.
+	You will see “Chromium Web Browser”. Install this by pressing the green install button.
+	Then hit Apply, enter your password, then Apply again to install it.
+</p>
+<h5>Chrome install – The harder way</h5>
+<p><em>Installing software will be covered in more detail later</em></p>
+<p>
+	We can use the terminal to install packages manually.
+	For this we need <code>pacman</code>.
+	First, open a terminal. To do this either open Konsole from the Launcher, or press F12 to open Yakuake.
+	To install Chrome type <code>sudo pacman –S chromium</code>, then enter your password.
+</p>
+
+<h4>Software Setup: Getting Work Done</h4>
+<p>
+	There are multiple office suites available for Linux, although Microsoft Office is not one of them.
+</p>
+<p>
+	When installing Manjaro, it will let you install either LibreOffice, or Softmaker FreeOffice.
+</p>
+<p>
+	To manually install Libreoffice, either find them in Add/Remove Software,
+	or install them from the command line: (libreoffice unstable is buggier but has more features) 
+</p>
+<table class="table table-hover">
+	<tr>
+		<th>Libreoffice Stable</th>
+		<td><code>sudo pacman -S libreoffice-still</code></td>
+	</tr>
+	<tr>
+		<th>Libreoffice Unstable</th>
+		<td><code>sudo pacman -S libreoffice-fresh</code></td>
+	</tr>
+</table>
+<p>
+	To get Freeoffice you need to use the Arch User Repo.
+	If you want Freeoffice, just wait until we cover it in the Software Installation section,
+	then install the package called <code>freeoffice</code> using yay.
+</p>
+
+<h3 class="display-6">Software Installation</h3>
+<h4>GUI</h4>
+<p>
+	This is the easiest way for most users.
+	Use the application called Add/Remove Software to find apps by category or search, and install them.
+</p>
+<p>
+	If you want to use the Arch User Repo, you <em>can</em> but should be using the command line ideally.
+	Open the menu in the top right and choose preferences, and then open the AUR tab and enable the switch.
+	You can also enable Flatpaks and Snaps.
+</p>
+
+<h4>Snaps</h4>
+<p>
+	Snaps are pieces of software that are available from <a href="//snapcraft.io">snapcraft.io</a>,
+	and installed either using the snap command, which will be given on the snap package’s page,
+	or using the GUI installer, once enabled.
+</p>
+
+<h4>Flatpaks</h4>
+<p>
+	Flatpaks are very similar to Snaps, but Flatpak first needs installing.
+	Install “flatpak” with pacman or use the GUI installer to install it.
+	Then get flatpaks from <a href="//flathub.org">flathub.org</a>.
+	Right at the bottom of a package’s flathub page is it’s command to install.
+</p>
+
+<h4>Software Installation – Finding Software for Arch & Manjaro</h4>
+<p>
+	If the software you want has Arch Linux install instructions, follow them.
+	If you know which software you want, the first stop is the Arch Wiki &#64;
+	<a href="//wiki.archlinux.org">wiki.archlinux.org</a>.
+	Search for the package, and if it’s found, then find its package name under the Installation tab.
+	If its name is listed, use pacman to install it. If its name has <sup>AUR</sup> written at the top of it,
+	you will need to install from the AUR.
+</p>
+<p>
+	If you cannot find it, then try looking at the AUR &#64; <a href="//aur.archlinux.org">aur.archlinux.org</a>.
+	Search for the package, and if you find it, then you can install it from there.
+</p>
+
+<h4>CLI</h4>
+<h5>Pacman & Official Packages</h5>
+<p>
+	Using <code>pacman</code>, you need to use the <code>-S</code> flag to install packages.
+	As a guide, use <code>sudo pacman -S &lt;package name&gt;</code>. This will install the package.
+</p>
+
+<h5>Yay and the Arch User Repository</h5>
+<p><strong>Introduction and Installation</strong></p>
+<p>
+	You can manually install from AUR, but it’s a bit of a pain.
+	Luckily, there are tools to do it all for us. We’re going to use a tool called <code>yay</code>.
+</p>
+<p>First install yay with <code>sudo pacman -S yay</code>.</p>
+
+<p><strong>Using yay for AUR packages</strong></p>
+<p>
+	Next you need to type <code>yay -S &lt;package name&gt;</code>.
+</p>
+
+<p><strong>Using yay for official packages</strong></p>
+<p>
+	You can use yay in place of pacman too, all the commands should be the same,
+	just replace <code>sudo pacman</code> with <code>yay</code>.
+</p>
+
+<p><strong>Using yay for official packages</strong></p>
+<p>
+	You can use yay in place of pacman too, all the commands should be the same,
+	just replace <code>sudo pacman</code> with <code>yay</code>.
+</p>
+
+<p><strong>Making sure your package comes from the right place</strong></p>
+<p>
+	To assume that the package you are requesting is from the official repos, use the “--repo” flag,
+	and to assume that the package you are requesting is from the AUR, use either “-a” or “--aur”.
+</p>
+
+<p><strong>Handy shortcuts that make things easier</strong></p>
+<p>Yay comes with some nice little shortcuts that let you miss out flags for easier use.</p>
+<p>
+	You can install packages without using the -S flag, and just typing <code>yay &lt;package name&gt;</code>.
+	This will list all possible options from both official repos and the AUR, with descriptions,
+	and let you choose which one to install. This is very user-friendly.
+</p>
+
+<h5>Keeping up to date</h5>
+<p>To update installed official software type <code>sudo pacman -Syu</code>.</p>
+<p>
+	You can also easily upgrade ALL software on your system, including official packages, AUR packages,
+	and even the system itself.
+	Type <code>yay</code> on its own to default to <code>yay -Syu</code> which upgrades EVERYTHING. Nice!
+</p>
+
+<h5>Removal</h5>
+<p>
+	To remove software use pacman’s (or yay’s) <code>-R</code> flag.
+	Because yay uses the same flags as pacman, it also uses the <code>-R</code> flag.
+</p>
+
+<h4>Conclusion</h4>
+<p>
+	Now you know how to install software using Arch’s packaging tools
+	and know your way around the KDE desktop
+	as well as how to open and close the SUPER USEFUL Yakuake drop-down terminal.
+</p>
