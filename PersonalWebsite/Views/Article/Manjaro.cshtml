@@ -154,7 +154,13 @@
 	You can manually install from AUR, but it’s a bit of a pain.
 	Luckily, there are tools to do it all for us. We’re going to use a tool called <code>yay</code>.
 </p>
-<p>First install yay with <code>sudo pacman -S yay</code>.</p>
+<p>
+	First install yay with <code>sudo pacman -S yay</code>.
+	This should be all you need for some AUR packages,
+	but for most (including <code>dotnet-sdk-3.0</code> and <code>minecraft-launcher<code>),
+	you will need to install extra software. Type <code>yay -S base-devel</code> and then hit enter at the prompt.
+	This will install everything needed to install almost every AUR package.
+</p>
 
 <p><strong>Using yay for AUR packages</strong></p>
 <p>
