@@ -13,5 +13,7 @@ namespace PersonalWebsite.Controllers
         public IActionResult Powerpoint() => View();
 
         public IActionResult UsbBoot() => View();
-    }
+
+		public IActionResult Manjaro() => View();
+	}
 }
