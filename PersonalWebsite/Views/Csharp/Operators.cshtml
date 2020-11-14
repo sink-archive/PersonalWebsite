@@ -1,4 +1,8 @@
-﻿<h1>
+﻿@{
+    ViewData["Title"] = "C# Operators";
+}
+
+<h1>
 	A full guide to C# operators
 </h1>
 
@@ -43,16 +47,21 @@
 			</div>
 			
 			<a class="list-group-item" href="#logical-ops">Logical Operators</a>
-			<div class="list-group-flush nested">
-				<a class="list-group-item" href="#not-gate">Logical NOT</a>
-				<a class="list-group-item" href="#and-gate">Logical AND</a>
-				<a class="list-group-item" href="#and-gate-sc">Logical AND (Short Circuiting)</a>
-				<a class="list-group-item" href="#or-gate">Logical OR</a>
-				<a class="list-group-item" href="#or-gate-sc">Logical OR (Short Circuiting)</a>
-				<a class="list-group-item" href="#xor-gate">Logical XOR</a>
-			</div>
+            <div class="list-group-flush nested">
+                <a class="list-group-item" href="#not-gate">Logical NOT</a>
+                <a class="list-group-item" href="#and-gate">Logical AND</a>
+                <a class="list-group-item" href="#and-gate-sc">Logical AND (Short Circuiting)</a>
+                <a class="list-group-item" href="#or-gate">Logical OR</a>
+                <a class="list-group-item" href="#or-gate-sc">Logical OR (Short Circuiting)</a>
+                <a class="list-group-item" href="#xor-gate">Logical XOR</a>
+            </div>
 			
-			<a class="list-group-item" href="#equality-ops">Equality Operators</a>
+            <a class="list-group-item" href="#assignment">Assignment</a>
+            <div class="list-group-flush nested">
+                <a class="list-group-item" href="#multiple-assignment">Multiple Assignment</a>
+            </div>
+			
+            <a class="list-group-item" href="#equality-ops">Equality Operators</a>
 			<div class="list-group-flush nested">
 				<a class="list-group-item" href="#equality">Equality Operator</a>
 				<a class="list-group-item" href="#inequality">Inequality Operator</a>
@@ -67,7 +76,7 @@
 			</div>
 			
 		
-			<a class="list-group-item" href="#compound-assignment">Compount Assignment</a>
+			<a class="list-group-item" href="#compound-assignment">Compound Assignment</a>
 			
 			<a class="list-group-item" href="#member-access-ops">Simple Member Access</a>
 			<div class="list-group-flush nested">
@@ -76,7 +85,56 @@
 			</div>
 		</div>
 		
-		<a class="list-group-item" href="#advanced">Advanced Operators</a>
+        <a class="list-group-item" href="#advanced">Advanced Operators</a>
+        <div class="list-group-flush nested">
+            <a class="list-group-item" href="#null-conditional-ops">Null-Conditional Member Access</a>
+            <div class="list-group-flush nested">
+                <a class="list-group-item" href="#member-access-nc">Member Access Operator</a>
+                <a class="list-group-item" href="#member-access-index">Index Access Operator</a>
+            </div>
+
+            <a class="list-group-item" href="#invocation">Invocation Expression</a>
+
+            <a class="list-group-item" href="#index-advanced">More Advanced Index Operators</a>
+            <div class="list-group-flush nested">
+                <a class="list-group-item" href="#index-advanced-from-end">Index from End Access Operator</a>
+                <a class="list-group-item" href="#index-advanced-range">Range Operator</a>
+            </div>
+
+            <a class="list-group-item" href="#casting-type-testing">Casting and Type Testing</a>
+            <div class="list-group-flush nested">
+                <a class="list-group-item" href="#is">Type Testing / is operator</a>
+                <a class="list-group-item" href="#as">Cast / as Operator</a>
+                <a class="list-group-item" href="#classic-cast">Classic Cast</a>
+                <a class="list-group-item" href="#typeof">Typeof Operator</a>
+            </div>
+			
+            <a class="list-group-item" href="#assignment-advanced">Advanced Assignment</a>
+            
+            <a class="list-group-item" href="#lambda">Lambda Expressions</a>
+            <div class="list-group-flush nested">
+                <a class="list-group-item" href="#lambda-expression">Expression Lambdas</a>
+                <a class="list-group-item" href="#lambda-statement">Statement Lambdas</a>
+            </div>
+			
+            <a class="list-group-item" href="#ternary">Ternary Operator</a>
+
+            <a class="list-group-item" href="#null-forgiving">Null-Forgiving Operator</a>
+			
+            <a class="list-group-item" href="#null-coalescing-ops">Null-Coalescing Operators</a>
+            <div class="list-group-flush nested">
+                <a class="list-group-item" href="#null-coalescing">Null-Coalescing Operator</a>
+                <a class="list-group-item" href="#null-coalescing-assignment">Null-Coalescing Assignment</a>
+            </div>
+			
+            <a class="list-group-item" href="#await">Await Operator</a>
+			
+            <a class="list-group-item" href="#nameof">Nameof Expression</a>
+			
+            <a class="list-group-item" href="#sizeof">Sizeof Operator</a>
+			
+            <a class="list-group-item" href="#true-false">True and False Operators</a>
+        </div>
 	</div>
 </div>
 
@@ -385,7 +443,24 @@
 	<code >&gt;=</code>
 </h4>
 <p>
-	Opposite of less than or equal.
+    Opposite of less than or equal.
+</p>
+<h3 id="assignment">
+    Assignment Operator:
+    <code >=</code>
+</h3>
+<p>
+    The assignment operator sets the value of its left operand to that of the
+    right operand. For example, when you set variables, you use the assignment
+    operator. It returns the left operand.
+</p>
+<h4 id="multiple-assignment">
+    Multiple Assignment
+</h4>
+<p>
+    You can assign multiple values like this: x = y = z, which will be
+    evaluated to x = (y = z), setting y equal to z first, and then setting
+    <code>x = y</code>, effectively setting both x and y equal to z.
 </p>
 <h3 id="compound-assignment">
 	Compound Assignment:
@@ -553,34 +628,20 @@
 	<code >typeof</code>
 </h4>
 <p>
-	You can use the Typeof to get the type of an object. You would use it like
-	this:
-	<code >typeof(x)</code>. The Typeof operator can also be used to differentiate
-	between whether the object inherits a type, or is of that type directly,
-	especially in combination with the Type testing operator (for more info see
-	here:
-	<a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/type-testing-and-cast#type-testing-with-the-typeof-operator">
-		Microsoft Docs
-	</a>
-	).
+    You can use the Typeof to get the type of an object. You would use it like
+    this:
+    <code >typeof(x)</code>. The Typeof operator can also be used to differentiate
+    between whether the object inherits a type, or is of that type directly,
+    especially in combination with the Type testing operator (for more info see
+    here:
+    <a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/type-testing-and-cast#type-testing-with-the-typeof-operator">
+        Microsoft Docs
+    </a>
+    ).
 </p>
-<h3 id="assignment">
-	Assignment Operator:
-	<code >=</code>
+<h3 id="assignment-advanced">
+    Advanced Assignment
 </h3>
-<p>
-	The assignment operator sets the value of its left operand to that of the
-	right operand. For example, when you set variables, you use the assignment
-	operator. It returns the left operand.
-</p>
-<h4 id="multiple-assignment">
-	Multiple Assignment
-</h4>
-<p>
-	You can assign multiple values like this: x = y = z, which will be
-	evaluated to x = (y = z), setting y equal to z first, and then setting
-	<code>x = y</code>, effectively setting both x and y equal to z.
-</p>
 <h4 id="assignment-nc">
 	Null-Coalescing Assignment:
 	<code>??=</code>
