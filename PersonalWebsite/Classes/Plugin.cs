@@ -1,6 +1,4 @@
-﻿using Microsoft.AspNetCore.Routing.Constraints;
-
-namespace PersonalWebsite
+﻿namespace PersonalWebsite
 {
 	public class Plugin
 	{
