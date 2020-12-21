@@ -1,0 +1,27 @@
+﻿@model LinksIndexViewModel
+@{
+	ViewData["Title"] = "LinkHub";
+}
+
+<h1 class="display-3">The LinkHub</h1>
+<p>All my accounts, etc., all in one place.</p>
+
+<div style="display: flex; -moz-flex-flow: row wrap; -ms-flex-flow: row wrap; -o-flex-flow: row wrap; -webkit-flex-flow: row wrap; flex-flow: row wrap">
+	@foreach (var (service, accountLink) in Model.AccountLinks)
+	{
+		<div class="card h-50">
+			<img src="@accountLink.Image" class="card-img-top" />
+			<div class="card-body">
+				<h5 class="card-title" style="float: left">@service</h5>
+				@if (accountLink.UseUsername)
+				{
+					<p class="card-text" style="float: right">@accountLink.Username</p>
+				}
+				else
+				{
+					<a href="@accountLink.Link" class="btn btn-outline-primary btn-sm stretched-link" style="float: right">Go</a>
+				}
+			</div>
+		</div>
+	}
+</div>

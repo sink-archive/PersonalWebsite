@@ -1,6 +1,29 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
+.card {
+	margin: 0.5rem;
+	padding: 0.5rem;
+	-ms-flex-basis: calc(50% - 1rem);
+	-o-flex-basis: calc(50% - 1rem);
+	-webkit-flex-basis: calc(50% - 1rem);
+	flex-basis: calc(50% - 1rem);
+}
+@media(max-width: 1024px) {
+	.card {
+		-ms-flex-basis: 100%;
+		-o-flex-basis: 100%;
+		-webkit-flex-basis: 100%;
+		flex-basis: 100%;
+	}
+}
+
+img.card-img-top {
+	-webkit-object-fit: contain;
+	object-fit: contain;
+	height: 10rem !important;
+}
+
 /* Give List Groups some room, use !important because bootstrap won't override otherwise */
 .list-group {
     margin-bottom: 1rem !important;
