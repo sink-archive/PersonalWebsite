@@ -1,0 +1,137 @@
+@{
+	ViewData["Title"] = "PGP decryption";
+}
+
+<h1 class="display-3">RSA PGP decryption in C#</h1>
+<p>The following is an example of PGP RSA decryption in C#, as there are no good examples I have found thus far. This code has been tested, is complete, and I used ReSharper to clean it up as much  as possible while keeping it fully working. Enjoy!</p>
+<h2>Crypto.cs</h2>
+<pre><code class='language-csharp' lang='csharp'>public class Crypto
+{
+    private readonly string                 _passphrase; // Private key passphrase
+    private readonly string                 _privateKey; // Private key in ASCII armor format (not base64)
+
+    public string Decrypt(string inputData)
+    {
+        using var inputStream = inputData.GetStream();
+        using var keyIn       = _privateKey.GetStream(Encoding.ASCII);
+        var       output      = Decrypt(inputStream, keyIn, _passphrase);
+
+        return output;
+    }
+
+    private string Decrypt(Stream inputStream, Stream privateKeyStream, string passPhrase)
+    {
+        string output;
+
+        var pgpFactory = new PgpObjectFactory(PgpUtilities.GetDecoderStream(inputStream));
+        // find secret key
+        var pgpKeyRing = new PgpSecretKeyRingBundle(PgpUtilities.GetDecoderStream(privateKeyStream));
+        var pgp        = pgpFactory.NextPgpObject();
+
+        // the first object might be a PGP marker packet.
+        PgpEncryptedDataList encryptedData;
+        if (pgp is PgpEncryptedDataList list)
+            encryptedData = list;
+        else
+            encryptedData = (PgpEncryptedDataList) pgpFactory.NextPgpObject();
+
+        // decrypt
+        PgpPrivateKey             privateKey = null;
+        PgpPublicKeyEncryptedData pubKeyData = null;
+        foreach (PgpPublicKeyEncryptedData pubKeyDataItem in encryptedData.GetEncryptedDataObjects())
+        {
+            privateKey = FindSecretKey(pgpKeyRing, pubKeyDataItem.KeyId, passPhrase.ToCharArray());
+
+            if (privateKey == null) continue;
+            pubKeyData = pubKeyDataItem;
+            break;
+        }
+
+        if (privateKey == null) throw new ArgumentException(&quot;Secret key for message not found.&quot;);
+
+        PgpObjectFactory plainFact;
+        using (var clear = pubKeyData.GetDataStream(privateKey))
+        {
+            plainFact = new PgpObjectFactory(clear);
+        }
+
+        var message = plainFact.NextPgpObject();
+
+        switch (message)
+        {
+            case PgpCompressedData data:
+                {
+                    var              compressedData       = data;
+                    PgpObjectFactory pgpCompressedFactory = null;
+
+                    using (var compDataIn = compressedData.GetDataStream())
+                    {
+                        pgpCompressedFactory = new PgpObjectFactory(compDataIn);
+                    }
+
+                    message = pgpCompressedFactory.NextPgpObject();
+                    PgpLiteralData literalData                      = null;
+                    if (message is PgpOnePassSignatureList) message = pgpCompressedFactory.NextPgpObject();
+
+                    literalData = (PgpLiteralData) message;
+                    using (var unc = literalData.GetInputStream())
+                    {
+                        output = IoHelper.GetString(unc);
+                    }
+
+                    break;
+                }
+            case PgpLiteralData data:
+                {
+                    var       literalData = data;
+                    using var unc         = literalData.GetInputStream();
+                    output = IoHelper.GetString(unc);
+
+                    break;
+                }
+            case PgpOnePassSignatureList _:
+                throw new PgpException(&quot;Encrypted message contains a signed message - not literal data.&quot;);
+            default:
+                throw new PgpException(&quot;Message is not a simple encrypted file - type unknown.&quot;);
+        }
+
+        return output;
+    }
+
+    private static PgpPrivateKey FindSecretKey(PgpSecretKeyRingBundle pgpSec, long keyId, char[] pass)
+        =&gt; pgpSec.GetSecretKey(keyId)?.ExtractPrivateKey(pass);
+}
+</code></pre>
+<h2>IOHelper.cs</h2>
+<pre><code class='language-csharp' lang='csharp'>public static class IoHelper
+	{
+		public static Stream GetStream(this string s, Encoding encoding = null)
+		{
+			var stream = new MemoryStream();
+			var writer = encoding != null ? new StreamWriter(stream, encoding) : new StreamWriter(stream);
+			writer.Write(s);
+			writer.Flush();
+			stream.Position = 0;
+			return stream;
+		}
+
+		public static string GetString(Stream inputStream)
+		{
+			using var reader = new StreamReader(inputStream);
+			var       output = reader.ReadToEnd();
+			return output;
+		}
+
+		public static void WriteStream(Stream inputStream, ref byte[] dataBytes)
+		{
+			using var outputStream = inputStream;
+			outputStream.Write(dataBytes, 0, dataBytes.Length);
+		}
+	}
+</code></pre>
+<p>That&#39;s it! Just make sure <code>_passphrase</code> and <code>_privateKey</code> are set and you&#39;re done.</p>
+
+<link rel="stylesheet"
+	  href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
