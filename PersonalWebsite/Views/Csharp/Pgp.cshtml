@@ -5,7 +5,7 @@
 <h1 class="display-3">RSA PGP decryption in C#</h1>
 <p>The following is an example of PGP RSA decryption in C#, as there are no good examples I have found thus far. This code has been tested, is complete, and I used ReSharper to clean it up as much  as possible while keeping it fully working. Enjoy!</p>
 <h2>Crypto.cs</h2>
-<pre><code class='language-csharp' lang='csharp' style="font-family: 'Jetbrains Mono', 'Fira Code', 'Dank Mono', 'SF Mono', monospace">public class Crypto
+<pre><code class='language-csharp' lang='csharp' style="font-family: 'Jetbrains Mono'">public class Crypto
 {
     private readonly string                 _passphrase; // Private key passphrase
     private readonly string                 _privateKey; // Private key in ASCII armor format (not base64)
@@ -103,7 +103,7 @@
 }
 </code></pre>
 <h2>IOHelper.cs</h2>
-<pre><code class='language-csharp' lang='csharp' style="font-family: 'Jetbrains Mono', 'Fira Code', 'Dank Mono', 'SF Mono', monospace">public static class IoHelper
+<pre><code class='language-csharp' lang='csharp' style="font-family: 'Jetbrains Mono'">public static class IoHelper
 	{
 		public static Stream GetStream(this string s, Encoding encoding = null)
 		{
