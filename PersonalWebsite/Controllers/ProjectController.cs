@@ -21,5 +21,7 @@ namespace PersonalWebsite.Controllers
         public IActionResult UnityGames() => View();
 
         public IActionResult YtdlGui() => View();
-    }
+
+		public IActionResult DiscordModding() => View();
+	}
 }
