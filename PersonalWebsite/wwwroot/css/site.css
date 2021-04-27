@@ -29,6 +29,17 @@ img.card-img-top {
 	height: 10rem !important;
 }
 
+/* GH icon etc */
+img.icon {
+	height: .75em;
+	vertical-align: baseline;
+}
+
+/* HLJS stuff */
+pre > code {
+	border-radius: .5rem;
+}
+
 /* Give List Groups some room, use !important because bootstrap won't override otherwise */
 .list-group {
     margin-bottom: 1rem !important;
