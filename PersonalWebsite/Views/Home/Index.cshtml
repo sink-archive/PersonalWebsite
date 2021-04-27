@@ -13,34 +13,34 @@
     <img src="https://gravatar.com/avatar/07c71710cff6bc1bd3ef089a2530cc82?s=1000&d=identicon" style="width: 120px; height: 120px; margin: 0.5rem;" />
 </div>
 
-<p>BTW, don't forget to use the sidebar to navigate around the most important pages!</p>
-
-<h4>Featured Stuff</h4>
-<div class="list-group">
-    <a class="list-group-item" href="~/duke">Duke Nukem 3D stuff</a>
-	<a class="list-group-item" href="~/article/manjaro">Getting Started with Manjaro Linux KDE</a>
-	<a class="list-group-item" href="~/project/discordfonts">Discord Font Pack: A collection of fonts, some serious, some not so much, loaded with BetterDiscord.</a>
-	<a class="list-group-item" href="~/csharp">C# stuff including PGP decryption & a full guide to operators</a>
-	<a class="list-group-item" href="~/feature/canijailbreak">Can I Jailbreak? (visit on your phone)</a>
-	<a class="list-group-item" href="https://routinehub.co/user/Yellowsink">My iOS Siri Shortcuts.</a>
-	<a class="list-group-item" href="~/article/usbboot">Adventures in booting Live Media.</a>
-	<a class="list-group-item" href="~/feature/vectorgallery">Abstract Art</a>
+<h4>The cool stuff</h4>
+<style>.linkgrid > .card { flex: 1; min-width: 15rem; }</style> @* Make my flexbox look nice *@
+<div class="linkgrid" style="display: flex; flex-wrap: wrap">
+	@* This view component made me feel smart to an unjustified level *@
+	<vc:page-link title="Reggie" subtitle="An awesome regex tool" controller="project" page="Reggie" />
+	<vc:page-link title="Gord" subtitle="Advanced Discord terminal client" controller="project" page="Gord" />
+	<vc:page-link title="ExType" subtitle="Next generation type conversion" controller="project" page="ExType" />
+	<vc:page-link title="Anilist4NET" subtitle="Finally! A good Anilist client!" controller="project" page="Anilist4Net" />
+	<vc:page-link title="Discord Client Modding & Themes" controller="project" page="DiscordModding" subtitle="" />
+	<vc:page-link title="C# stuff, including OpenPGP!" controller="csharp" page="" subtitle="" />
+	<vc:page-link title="Adventures in USB Boot" controller="article" page="UsbBoot" subtitle="" />
+	<vc:page-link title="Vector images I made I guess" controller="feature" page="VectorGallery" subtitle="" />
+	<vc:page-link title="A GUI for youtube-dl" controller="project" page="YtdlGui" subtitle="" />
+	<vc:page-link title="A cringy rant about Chrome OS" controller="article" page="ChromeOs" subtitle="" />
+	<vc:page-link title="Me hating on python a bit" controller="article" page="Python" subtitle="" />
 </div>
 
-<h4>My Other Stuff</h4>
+<h4>Stuff I care less about</h4>
 <div class="list-group">
-    <a class="list-group-item" href="~/article/jailbreak">Jailbraking Adventures... And Misadventures.</a>
+	<a class="list-group-item" href="~/feature/canijailbreak">Can I Jailbreak? (visit on your phone)</a>
+	<a class="list-group-item" href="https://routinehub.co/user/Yellowsink">My iOS Siri Shortcuts.</a>
+	<a class="list-group-item" href="~/article/jailbreak">Jailbraking Adventures... And Misadventures.</a>
     <a class="list-group-item" href="~/feature/plugins">A somewhat accurate list of my favourite audio plugins</a>
-    <a class="list-group-item" href="https://cainssharptools.readthedocs.io/">My .NET Library: Cain's SharpTools</a>
-    <a class="list-group-item" href="~/project/ytdlgui">A GUI for the youtube-dl.org Project: YTDL-GUI</a>
-    <a class="list-group-item" href="~/article/chromeos">My rant about Chrome OS</a>
-    <a class="list-group-item" href="~/project/runplusplus">An open-source Run dialog replacement: Run++</a>
+    <a class="list-group-item" href="https://cainssharptools.readthedocs.io/">My (old) .NET Library: Cain's SharpTools</a>
+	<a class="list-group-item" href="~/project/runplusplus">An open-source Run dialog replacement: Run++</a>
+	<a class="list-group-item" href="~/duke">Duke3D stuff</a>
     <a class="list-group-item" href="~/project/sourcemapinstaller">A map installer for Source Engine games: SourceMapInstaller</a>
-    <a class="list-group-item" href="~/article/python">Why i hate Python!!!</a>
-    <a class="list-group-item" href="~/project/massmultiplier">A tool to multiply numbers in batch: Mass Multiplier</a>
-    <a class="list-group-item" href="~/project/cspurge">A crappy CS:GO mod I made as a joke with my friends: Counter Strike Purge</a>
-    <a class="list-group-item" href="~/project/sortingcs">Sorting Algorithms implemented in C#: Sorting C#</a>
     <a class="list-group-item" href="~/project/unitygames">Stuff I've made in Unity</a>
-    <a class="list-group-item" href="~/project/fdp">A (very) buggy tool to convert between Fractions, Decimals, and Percentages</a>
-    <a class="list-group-item" href="~/article/powerpoint">Cool stuff you can do in PowerPoint!</a>
+	<a class="list-group-item" href="~/article/powerpoint">Cool stuff you can do in PowerPoint!</a>
+	<a class="list-group-item" href="~/article/manjaro">Cringe person calls arch stable</a>
 </div>
