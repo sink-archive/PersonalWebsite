@@ -8,9 +8,12 @@ namespace PersonalWebsite.ViewComponents
 		public async Task<IViewComponentResult> InvokeAsync(
 			string title,
 			string controller,
-			string page)
+			string page,
+			string subtitle)
 		{
-			return View(new [] {title, controller, page});
+			return View(string.IsNullOrWhiteSpace(subtitle)
+				? new [] {title, controller, page}
+				: new [] {title, controller, page, subtitle});
 		}
 	}
 }
