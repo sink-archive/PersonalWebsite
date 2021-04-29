@@ -52,6 +52,8 @@
 	</span>
 </IndexTopBar>
 
+
+<h2>More important stuff</h2>
 <div class="card-container">
 	{#each importantLinks as link}
 	<LinkCard showSubtitle="{link.subtitle}" href="{link.link}">
@@ -61,6 +63,7 @@
 	{/each}
 </div>
 
+<h2>Stuff I care significantly less about</h2>
 
 
 <style>

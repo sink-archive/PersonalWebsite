@@ -22,3 +22,7 @@ a:hover {
     --p: 50.1%;
     transition: cubic-bezier(0, 500, 1, 500) 0.3s, background-size 0.3s 0.3s;
 }
+
+h1, h2, h3, h4, h5, h6 {
+		font-weight: lighter;
+}

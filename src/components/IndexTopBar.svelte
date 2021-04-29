@@ -27,11 +27,8 @@
 }
 
 
-h1, .subtitle {
-	font-weight: lighter;
-}
-
 .subtitle {
+	font-weight: lighter;
 	font-size: 1.5rem;
 }
 </style>
