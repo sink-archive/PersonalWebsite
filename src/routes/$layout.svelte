@@ -1,6 +1,6 @@
 <svelte:head>
     <link href="/styles.css" rel="stylesheet" />
-		<title>Cain's site</title>
+	<title>Cain's site</title>
 </svelte:head>
 
 <nav>
