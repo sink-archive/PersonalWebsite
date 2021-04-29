@@ -1,13 +1,9 @@
 <script>
 	import GithubIcon from '../../components/GithubIcon.svelte';
-	import Highlight from 'svelte-highlight';
-	import shell from 'svelte-highlight/src/languages/shell';
-	import monokaiSublime from 'svelte-highlight/src/styles/monokai-sublime';
+	import Highlight  from 'svelte-highlight';
+   	import bash from "svelte-highlight/src/languages/bash";
+	import 'svelte-highlight/src/styles/monokai-sublime.css';
 </script>
-
-<svelte:head>
-	{@html monokaiSublime}
-</svelte:head>
 
 <h1>Reggie <GithubIcon repo="reggie" /></h1>
 
@@ -21,7 +17,7 @@
 <p>
     Patch usrbg for Vizality (based on my previous script <a href="//gist.github.com/cainy-a/f29ed1dc9e1b348d4f2436fa18e95db9">here</a>)
     (this was tested with fish, <code>\n</code> may work differently in other shells)
-    <Highlight language={shell} code="reggie usrbg.css '\\[data-user-id=&quot;(.{17,18})&quot;\\]:not\\(img\\)' '$&,'\n'[vz-user-id=&quot;$1&quot;]:not(img)' patched.css
+    <Highlight language={bash} code="reggie usrbg.css '\\[data-user-id=&quot;(.{17,18})&quot;\\]:not\\(img\\)' '$&,'\n'[vz-user-id=&quot;$1&quot;]:not(img)' patched.css
 mv patched.css usrbg.css" />
 </p>
 
@@ -34,18 +30,18 @@ mv patched.css usrbg.css" />
 <h3>Install it</h3>
 <p>
     Arch Linux with <code>yay</code>:
-	<Highlight language={shell} code="yay -S reggie-git" />
+	<Highlight language={bash} code="yay -S reggie-git" />
 </p>
 <p>
     Arch Linux:
-    <Highlight language={shell} code="wget &quot;https://aur.archlinux.org/cgit/aur.git/snapshot/reggie-git.tar.gz&quot;
+    <Highlight language={bash} code="wget &quot;https://aur.archlinux.org/cgit/aur.git/snapshot/reggie-git.tar.gz&quot;
 tar -xzf reggie-git.tar.gz
 cd reggie-git
 makepkg -si" />
 </p>
 <p>
     Any Linux:
-	<Highlight language={shell} code="wget &quot;https://github.com/cainy-a/reggie/archive/refs/heads/master.tar.gz&quot;
+	<Highlight language={bash} code="wget &quot;https://github.com/cainy-a/reggie/archive/refs/heads/master.tar.gz&quot;
 tar -xzf master.tar.gz
 cd reggie-master
 dotnet build
