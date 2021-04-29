@@ -4,14 +4,16 @@
 </script>
 
 <a {href} class="card">
-	<div class="title">
-		<slot name="title" />
+	<div class="main">
+		<div class="title">
+			<slot name="title" />
+		</div>
+		{#if showSubtitle}
+		<div class="subtitle">
+			<slot name="subtitle" />	
+		</div>
+		{/if}
 	</div>
-	{#if showSubtitle}
-	<div class="subtitle">
-		<slot name="subtitle" />	
-	</div>
-	{/if}
 	<a {href}>Visit page</a>
 </a>
 
@@ -19,13 +21,32 @@
 .card {
 	/* disable link colour for cards */
 	--link-color: unset !important;
-	/* general card styles */
-	display: block;
+	/* layout crap */
+	display: flex;
+	flex-flow: column nowrap;
+	/* other stuffs */
 	min-width: 15rem;
 	flex: 1;
 	margin: .25rem;
 	padding: .5rem;
 	border: 1px solid lightslategray;
 	border-radius: .25rem;
+}
+
+.main {
+	flex: 1;
+}
+
+.card a {
+	width: max-content;
+}
+
+/* make the stuff inside look right */
+.title {
+	font-size: 1.25em;
+}
+
+.subtitle {
+	font-weight: bold;
 }
 </style>

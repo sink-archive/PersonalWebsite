@@ -14,18 +14,24 @@
 
 
 <style>
-.subtitle {
-	font-size: 1.3rem;
-}
-
 .topbar {
 	display: flex;
 }
 .topbar .left {
 	float: left;
+	flex: 1;
 }
 .topbar .right {
 	float: right;
 	margin-left: .5rem;
+}
+
+
+h1, .subtitle {
+	font-weight: lighter;
+}
+
+.subtitle {
+	font-size: 1.5rem;
 }
 </style>

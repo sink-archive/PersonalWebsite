@@ -9,8 +9,36 @@
 			link: 'project/reggie'
 		},
 		{
+			title: 'Gord',
+			subtitle: 'Advanced terminal Discord client',
+			link: 'project/gord'
+		},
+		{
+			title: 'ExType',
+			subtitle: 'Next generation type conversion',
+			link: 'project/extype'
+		},
+		{
+			title: 'Anilist4NET',
+			subtitle: 'Finally! A good Anilist client!',
+			link: 'project/anilist4net'
+		},
+		{
 			title: 'Discord client modding & themes',
-			link: 'project/discordmodding'
+			link: 'project/discord-modding'
+		},
+		{
+			title: 'C# stuff',
+			subtitle: '...including PGP!',
+			link: 'csharp'
+		},
+		{
+			title: 'Some images idk',
+			link: 'gallery'
+		},
+		{
+			title: 'A GUI for youtube-dl',
+			link: 'project/ytdl-gui'
 		}
 	];
 </script>
