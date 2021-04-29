@@ -131,6 +131,11 @@
   "resolved" "https://registry.npmjs.org/hash-sum/-/hash-sum-2.0.0.tgz"
   "version" "2.0.0"
 
+"highlight.js@10.7.2":
+  "integrity" "sha512-oFLl873u4usRM9K63j4ME9u3etNF0PLiJhSQ8rdfuL51Wn3zkD6drf9ZW0dOzjnZI22YYG24z30JcmfCZjMgYg=="
+  "resolved" "https://registry.npmjs.org/highlight.js/-/highlight.js-10.7.2.tgz"
+  "version" "10.7.2"
+
 "is-core-module@^2.2.0":
   "integrity" "sha512-xSphU2KG9867tsYdLD4RWQ1VqdFl4HTO9Thf3I/3dLEfr0dbPTWKsuCKrgqMljg4nPE+Gq0VCnzT3gr0CyBmsw=="
   "resolved" "https://registry.npmjs.org/is-core-module/-/is-core-module-2.3.0.tgz"
@@ -232,6 +237,13 @@
   "version" "7.2.0"
   dependencies:
     "has-flag" "^4.0.0"
+
+"svelte-highlight@^1.0.1":
+  "integrity" "sha512-8DP2yc/L9RYGk0w00v3IKVZhGrWqv8COYAqvtC0dCN4c3a2GNcb5utth+HDlKd0qdVh9wLBkppdH44ZLnryglw=="
+  "resolved" "https://registry.npmjs.org/svelte-highlight/-/svelte-highlight-1.0.1.tgz"
+  "version" "1.0.1"
+  dependencies:
+    "highlight.js" "10.7.2"
 
 "svelte-hmr@^0.14.2":
   "integrity" "sha512-N56xX405zLMw2tpGHKRx5h+kmdeZwxI21pvyC6OyBHJDCF6DlwWBm9TifdQmSD4dloWSmpDPzHWYa3CSjfopUg=="

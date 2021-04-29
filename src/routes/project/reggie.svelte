@@ -1,6 +1,13 @@
 <script>
 	import GithubIcon from '../../components/GithubIcon.svelte';
+	import Highlight from 'svelte-highlight';
+	import shell from 'svelte-highlight/src/languages/shell';
+	import monokaiSublime from 'svelte-highlight/src/styles/monokai-sublime';
 </script>
+
+<svelte:head>
+	{@html monokaiSublime}
+</svelte:head>
 
 <h1>Reggie <GithubIcon repo="reggie" /></h1>
 
@@ -14,9 +21,9 @@
 <p>
     Patch usrbg for Vizality (based on my previous script <a href="//gist.github.com/cainy-a/f29ed1dc9e1b348d4f2436fa18e95db9">here</a>)
     (this was tested with fish, <code>\n</code> may work differently in other shells)
-    <pre><code class="language-shell" lang="shell" style="font-family: 'Jetbrains Mono', monospace">reggie usrbg.css '\\[data-user-id="(.{17,18})"\\]:not\\(img\\)' '$&,'\n'[vz-user-id="$1"]:not(img)' patched.css
-mv patched.css usrbg.css
-</code></pre>
+    <Highlight language={shell} code="reggie usrbg.css '\\[data-user-id=&quot;(.{17,18})&quot;\\]:not\\(img\\)' '$&,'\n'[vz-user-id=&quot;$1&quot;]:not(img)' patched.css
+mv patched.css usrbg.css" />
+</p>
 
 <h3>I don't want replace, I want find!!!</h3>
 <p>
@@ -27,22 +34,22 @@ mv patched.css usrbg.css
 <h3>Install it</h3>
 <p>
     Arch Linux with <code>yay</code>:
-    <pre><code class="language-shell" lang="shell" style="font-family: 'Jetbrains Mono', monospace">yay -S reggie-git
-</code></pre>
+	<Highlight language={shell} code="yay -S reggie-git" />
+</p>
 <p>
     Arch Linux:
-    <pre><code class="language-shell" lang="shell" style="font-family: 'Jetbrains Mono', monospace">wget "https://aur.archlinux.org/cgit/aur.git/snapshot/reggie-git.tar.gz"
+    <Highlight language={shell} code="wget &quot;https://aur.archlinux.org/cgit/aur.git/snapshot/reggie-git.tar.gz&quot;
 tar -xzf reggie-git.tar.gz
 cd reggie-git
-makepkg -si
-</code></pre>
+makepkg -si" />
+</p>
 <p>
     Any Linux:
-    <pre><code class="language-shell" lang="shell" style="font-family: 'Jetbrains Mono', monospace">wget "https://github.com/cainy-a/reggie/archive/refs/heads/master.tar.gz"
+	<Highlight language={shell} code="wget &quot;https://github.com/cainy-a/reggie/archive/refs/heads/master.tar.gz&quot;
 tar -xzf master.tar.gz
 cd reggie-master
 dotnet build
 # sudo is used here, doas or just running as root will also work.
 sudo mv Reggie/bin/Debug/net5.0/ /usr/lib/reggie/
-sudo ln /usr/lib/reggie/Reggie /usr/bin/reggie
-</code></pre>
+sudo ln /usr/lib/reggie/Reggie /usr/bin/reggie" />
+</p>
