@@ -1,11 +1,38 @@
 <svelte:head>
-	<link href="../lib/css/styles.css" rel="stylesheet" />
+    <link href="/styles.css" rel="stylesheet" />
 </svelte:head>
 
 <nav>
-	<a href=".">Home</a>
+	<a href="/">Home</a>
 	<a href="rhythm">Rhythm Games</a>
 	<a href="links">Links</a>
 </nav>
 
-<slot/>
+<main>
+    <slot/>
+</main>
+
+<style>
+main {
+    padding: 1rem;
+}
+
+nav {
+    height: 1.5rem;
+    padding: .5rem;
+    padding-top: 0;
+    border-bottom: 1px solid grey;
+    text-align: center;
+}
+
+nav a {
+    /*
+    --link-spacing: 2rem;
+    margin-left: calc(var(--link-spacing) / 2);
+    margin-right: calc(var(--link-spacing) / 2);
+    */
+
+    display: inline-block;
+    width: 9rem;
+}
+</style>
