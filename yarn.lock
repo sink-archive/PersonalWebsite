@@ -243,7 +243,7 @@ supports-color@^7.1.0:
   dependencies:
     has-flag "^4.0.0"
 
-svelte-highlight@2.0.0:
+svelte-highlight@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/svelte-highlight/-/svelte-highlight-2.0.0.tgz#e4e0e464cd51be40fd4300826053515a0203c740"
   integrity sha512-YlofbpXRL3kwikHYeFBSEoaovx1VbIZ62rmKqQ1y8K2cZAbo59DKTQbico/AhKjS7nOu47jPi9z4dKW1n4B00A==
