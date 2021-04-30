@@ -39,4 +39,5 @@ main {
 
 .container {
 		max-width: 75rem;
+		min-width: 0;
 }

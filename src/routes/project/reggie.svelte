@@ -2,7 +2,7 @@
 	import GithubIcon from '../../components/GithubIcon.svelte';
 	import Highlight  from 'svelte-highlight';
    	import bash from "svelte-highlight/src/languages/bash";
-	import 'svelte-highlight/src/styles/monokai-sublime.css';
+    import "svelte-highlight/src/styles/base16-monokai.css";
 </script>
 
 <h1>Reggie <GithubIcon repo="reggie" /></h1>
