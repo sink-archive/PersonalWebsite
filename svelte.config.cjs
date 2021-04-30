@@ -8,18 +8,6 @@ module.exports = {
 
 	kit: {
 		// hydrate the <div id="svelte"> element in src/app.html
-		target: '#svelte',
-
-		vite: {
-      optimizeDeps: {
-        include: [
-          "highlight.js/lib/core.js",
-          "highlight.js/lib/languages/bash.js",
-          "highlight.js/lib/languages/css.js",
-          "highlight.js/lib/languages/javascript.js",
-          "highlight.js/lib/languages/xml.js",
-        ]
-      }
-    }
+		target: '#svelte'
 	}
 };
