@@ -10,14 +10,12 @@
 </nav>
 
 <main>
-    <slot/>
+		<div class="container">
+    	<slot/>
+		</div>
 </main>
 
 <style>
-main {
-    padding: 1rem;
-}
-
 nav {
     height: 1.5rem;
     padding: .5rem;
@@ -31,7 +29,7 @@ nav a {
     --link-spacing: 2rem;
     margin-left: calc(var(--link-spacing) / 2);
     margin-right: calc(var(--link-spacing) / 2);
-    */
+ */
 
     display: inline-block;
     width: 9rem;
