@@ -65,7 +65,7 @@
 </div>
 
 <h2>Stuff I care significantly less about</h2>
-<ul>
+<ul class="list">
 	<ListItem href="feature/can-i-jailbreak">Can I jailbreak? (visit on your phone)</ListItem>
 	<ListItem href="//routinehub.co/user/Yellowsink">iOS Siri Shortcuts</ListItem>
 	<ListItem href="article/jailbreak">Cringy jailbreaking article</ListItem>
@@ -87,9 +87,5 @@
 	flex-wrap: wrap;
 }
 
-ul {
-	border: 1px solid lightslategray;
-	border-radius: .25rem;
-	padding: 0;
-}
+
 </style>
