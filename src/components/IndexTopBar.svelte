@@ -25,10 +25,4 @@
 	float: right;
 	margin-left: .5rem;
 }
-
-
-.subtitle {
-	font-weight: lighter;
-	font-size: 1.5rem;
-}
 </style>

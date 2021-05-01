@@ -9,7 +9,7 @@
 			<slot name="title" />
 		</div>
 		{#if showSubtitle}
-		<div class="subtitle">
+		<div class="card-subtitle">
 			<slot name="subtitle" />	
 		</div>
 		{/if}
@@ -46,7 +46,7 @@
 	font-size: 1.25em;
 }
 
-.subtitle {
+.card-subtitle {
 	font-weight: bold;
 }
 </style>

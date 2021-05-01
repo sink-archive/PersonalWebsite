@@ -7,7 +7,7 @@
 
 <h1>Reggie <GithubIcon repo="reggie" /></h1>
 
-<h2>sed alternative - Painless regex replace from the CLI</h2>
+<p class="subtitle">sed alternative - Painless regex replace from the CLI</p>
 <h3>This screenshot should explain all you need to know</h3>
 <img alt="image"
      src="//raw.githubusercontent.com/cainy-a/reggie/master/screenshot.png"

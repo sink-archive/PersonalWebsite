@@ -1,0 +1,186 @@
+<script>
+	import GithubIcon from '../../components/GithubIcon.svelte';
+	import Highlight  from 'svelte-highlight';
+   	import bash from "svelte-highlight/src/languages/bash";
+    import "svelte-highlight/src/styles/base16-monokai.css";
+</script>
+
+<h1>Gord <GithubIcon repo="gord" /></h1>
+<p class="subtitle">The advanced Discord terminal client based on Cordless</p>
+
+<img alt="Screenshot of cordlesss"
+     src="//raw.githubusercontent.com/cainy-a/gord/master/.github/images/chat-demo.png"
+     style="width: 100%" />
+
+<br/><br/>
+
+
+<p>Gord is a maintained fork of <a href="https://github.com/Bios-Marcel/cordless">Cordless</a> with extra features.</p>
+<h2 id="warning-">Warning!</h2>
+<p>Gord is in development and is against Discord's TOS. We are not responsible for any damage.</p>
+<h2 id="overview">Overview</h2>
+<ul>
+    <li>
+        <a href="#installation">How to install it</a>
+        <ul>
+            <li><a href="#using-prebuilt-binaries">Using prebuilt binaries</a></li>
+            <li><a href="#building-from-source">Building from source</a></li>
+        </ul>
+    </li>
+    <li><a href="#login">Login</a></li>
+    <li><a href="#quick-overview-navigation-switching-between-boxes-containers">Quick overview - Navigation (switching between boxes / containers)</a></li>
+    <li><a href="#extending-gord-via-the-scripting-interface">Extending Gord via the scripting interface</a></li>
+    <li><a href="#troubleshooting">Troubleshooting</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="#this-project-isn-t-for-you-if">This project isn't for you, if</a></li>
+    <li><a href="#similar-projects">Similar projects</a></li>
+    <li><a href="#credits">Credits</a></li>
+</ul>
+<p>
+    Gord is a custom <a href="https://discord.com/app">Discord</a> client that aims to
+    have a low memory footprint and be aimed at power-users.
+</p>
+<p>
+    The application only uses the official Discord API and doesn't send data to
+    third parties. However, this application is not an official product by
+    Discord Inc.
+</p>
+<h2 id="installation">Installation</h2>
+<h3 id="using-prebuilt-binaries">Using prebuilt binaries</h3>
+<p>
+    If you don't want to build the application yourself or use some kind of
+    package management system, you can get the latest binaries for the three
+    major systems in the release overview:
+</p>
+<p>
+    <a href="https://github.com/cainy-a/gord/releases/latest">https://github.com/cainy-a/gord/releases/latest</a>
+</p>
+<h3 id="building-from-source">Building from source</h3>
+<p>
+    In order to execute the following commands, you need to install <strong>go 1.13 or</strong>
+    higher. You can find golang packages at <a href="https://golang.org/doc/install">https://golang.org/doc/install</a>.
+    On top of that, you need to have <strong>git</strong> installed. It can be found at
+    <a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a>.
+</p>
+<p>
+    <strong>UPDATES HAVE TO BE INSTALLED MANUALLY</strong>
+</p>
+<p>Open a command line and execute the following commands:</p>
+<Highlight language={bash} code="git clone https://github.com/cainy-a/gord
+cd gord
+go build"/>
+<p>
+    This will create an executable file called <code>gord</code> or <code>gord.exe</code>
+    depending on whether you are on Windows or not. Move that file anywhere
+    that your terminal can find it. I recommend adding a <code>bin</code> folder to your
+    user home and adding it to your systems <code>PATH</code> variable. Please search the
+    internet, using your favorite search engine, for
+    <code>how to set an environment variable in XXX</code> in order to update your <code>PATH</code>
+    variable correctly.
+</p>
+<p>
+    For updating, you simply have to delete the folder you downloaded last
+    time and repeat the instructions.
+</p>
+<p>Note:</p>
+<ul>
+    <li>X11 users need <code>xclip</code> in order to copy and paste.</li>
+    <li>Wayland users need <code>wl-clipboard</code> in order to copy and paste.</li>
+    <li>Mac OS users need <code>pngpaste</code> in order to copy and paste images.</li>
+</ul>
+<h3 id="login">Login</h3>
+<p>
+    <strong>YOUR PASSWORD IS NEVER SAVED LOCALLY.</strong>
+</p>
+<p>Logging in works via the UI on first startup of the application.</p>
+<p>
+    If you are logging in with a bot token, you have to prepend <code>Bot</code> in front of
+    the token. You also need to enable an intent.
+    <img src="https://cdn.discordapp.com/attachments/690477562857521174/829450090829053972/unknown.png" alt="" style="width: 100%" />
+</p>
+<p>If you need to find out how to retrieve your token, check <a href="https://github.com/cainy-a/gord/wiki/Retrieving-your-token">the gord wiki</a>.</p>
+<p>
+    <strong>Currently captcha-code login isn't supported. Thanks for your SHIT-API, Google</strong>
+</p>
+<h2 id="quick-overview-navigation-switching-between-boxes-containers">Quick overview - Navigation (switching between boxes / containers)</h2>
+<table>
+    <thead>
+    <tr>
+        <th>Shortcut</th>
+        <th style="text-align:left">Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td><kbd>Alt</kbd> + <kbd>S</kbd></td>
+        <td style="text-align:left">Sets the focus on the servers (guilds) container</td>
+    </tr>
+    <tr>
+        <td><kbd>Alt</kbd> + <kbd>C</kbd></td>
+        <td style="text-align:left">Sets the focus on the channels container</td>
+    </tr>
+    <tr>
+        <td><kbd>Alt</kbd> + <kbd>T</kbd></td>
+        <td style="text-align:left">Sets the focus on the messages container</td>
+    </tr>
+    <tr>
+        <td><kbd>Alt</kbd> + <kbd>M</kbd></td>
+        <td style="text-align:left">Sets the focus on the messages input field</td>
+    </tr>
+    <tr>
+        <td><kbd>Alt</kbd> + <kbd>U</kbd></td>
+        <td style="text-align:left">Sets the focus on the users container</td>
+    </tr>
+    <tr>
+        <td><kbd>Alt</kbd> + <kbd>P</kbd></td>
+        <td style="text-align:left">Opens the direct messages container</td>
+    </tr>
+    <tr>
+        <td><kbd>Alt</kbd> + <kbd>.</kbd></td>
+        <td style="text-align:left">Toggles the internal console view</td>
+    </tr>
+    </tbody>
+</table>
+<p>
+    Further shortcuts / key-bindings can be found in the manual on the internal
+    console with the command <code>manual</code>.
+</p>
+<p>
+    If any of the default commands don't work for you, open the keyboard shortcut
+    changer via <kbd>Ctrl</kbd> + <kbd>K</kbd>.
+</p>
+<h2 id="extending-gord-via-the-scripting-interface">Extending Gord via the scripting interface</h2>
+<p>
+    <a href="https://github.com/cainy-a/gord/wiki/Extending-Gord-via-the-scripting-interface">Check the Gord wiki</a>
+</p>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<p>
+    If you happen to encounter a crash or a bug, please submit a bug report via
+    the projects GitHub issue tracker. Bugs reported via Discord will probably
+    be forgotten or overseen.
+</p>
+<p>For general problems faced by gord users, check out the <a href="https://github.com/cainy-a/gord/wiki/Troubleshooting">gord wiki</a> at</p>
+<p>
+    If you need help or have questions that you don't want to create an issue
+    for, just join the Gord Discord server: <a href="https://discord.gg/e4HnvY28Wq">https://discord.gg/e4HnvY28Wq</a>
+</p>
+<h1 id="faq">FAQ</h1>
+<p>In order to find answers to common questions, check out the <a href="https://github.com/cainy-a/gord/wiki/FAQ">FAQ</a></p>
+<h2 id="this-project-isn-t-for-you-if">This project isn't for you, if</h2>
+<ul>
+    <li>You like a physical, fancy GUI with proper mouse support</li>
+    <li>You need to have all of Discord's latest features</li>
+    <li>You need to manage or moderate servers</li>
+</ul>
+<h2 id="similar-projects">Similar projects</h2>
+<p>Here is a list of similar projects:</p>
+<ul>
+    <li><a href="https://github.com/xynxynxyn/terminal-discord">terminal-discord</a> (DEPRECATED)</li>
+    <li><a href="https://github.com/topisani/Discurses">Discurses</a> (ARCHIVED)</li>
+    <li><a href="https://github.com/MitchWeaver/Discline">Discline</a> (ARCHIVED)</li>
+    <li><a href="https://github.com/cloudrex/discord-term">discord-term</a> (STALE)</li>
+    <li><a href="https://gitlab.com/diamondburned/6cord">6cord</a> (DEPRECATED)</li>
+</ul>
+<p>Hit me up if you have a similar project, and I'll gladly add it to the list.</p>
+<h2 id="credits">Credits</h2>
+<p>This project is based off of <a href="https://github.com/Bios-Marcel/cordless">Cordless by Bios-Marcel</a></p>
