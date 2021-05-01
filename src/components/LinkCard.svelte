@@ -31,6 +31,8 @@
 	padding: .5rem;
 	border: 1px solid lightslategray;
 	border-radius: .25rem;
+
+	text-align: left;
 }
 
 .main {
