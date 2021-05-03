@@ -44,6 +44,27 @@
             <ListItem indent=2 href="#member-access-nc">Member Access Operator</ListItem>
             <ListItem indent=2 href="#member-access-index-nc">Index Access Operator</ListItem>
         <ListItem indent=1 href="#invocation">Invocation Expression</ListItem>
+        <ListItem indent=1 href="#index-advanced">Indexing</ListItem>
+            <ListItem indent=2 href="#index-advanced-from-end">Index from end</ListItem>
+            <ListItem indent=2 href="#index-advanced-range">Range index</ListItem>
+        <ListItem indent=1 href="#casting-type-testing">Casting & Type testing</ListItem>
+            <ListItem indent=2 href="#is">Type testing - is</ListItem>
+            <ListItem indent=2 href="#as">Casting - as</ListItem>
+            <ListItem indent=2 href="#classic-cast">Classic cast</ListItem>
+            <ListItem indent=2 href="#typeof">typeof</ListItem>
+        <ListItem indent=1 href="#assignment-advanced">Assignment</ListItem>
+        <ListItem indent=1 href="#lambda">Lambda Expressions</ListItem>
+            <ListItem indent=2 href="#lambda-expression">Expression Lambdas</ListItem>
+            <ListItem indent=2 href="#lambda-statement">Statement Lambdas</ListItem>
+        <ListItem indent=1 href="#ternary">Ternary operator</ListItem>
+        <ListItem indent=1 href="#null-forgiving">Null-forgiving Operator</ListItem>
+        <ListItem indent=1 href="#null-coalescing-ops">Null-Coalescing Operators</ListItem>
+            <ListItem indent=2 href="#null-coalescing">Null-Coalescing</ListItem>
+            <ListItem indent=2 href="#null-coalescing-assignment">Null-Coalescing Assignment</ListItem>
+        <ListItem indent=1 href="#await">await Operator</ListItem>
+        <ListItem indent=1 href="#nameof">nameof Expression</ListItem>
+        <ListItem indent=1 href="#sizeof">sizeof Operator</ListItem>
+        <ListItem indent=1 href="#true-false">True & False</ListItem>
 </ul>
 
 
