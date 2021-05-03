@@ -1,26 +1,24 @@
 <script>
-		let border = "1px solid lightslategray";
-
-		export let href;
-		export let indent = 0;
-
-		// ignore this pure spaghetti that makes this component work for a treeview-style list too
-		let style = "";
-		if (indent != 0) {
-				style += `border-left: ${border}; border-top: ${border}; margin-top: -1px;`;
-		}
-		style += `margin-left: ${indent}rem`;
+	export let href;
+	export let indent = 0;
 </script>
 
-<li {style}><a {href}><slot/></a></li>
+<li style={`margin-left: calc(${indent}rem - 1px)`}><a {href}><slot/></a></li>
 
 <style>
 li {
-		list-style-type: none;
-		padding: .2rem .5rem;
-		border-bottom: 1px solid lightslategray;
+	list-style-type: none;
+	padding: .2rem .5rem;
+	border: 1px solid lightslategray;
+	margin-top: -1px;
 }
+
+li:first-child {
+	border-radius: .25rem .25rem 0 0;
+	margin-top: 0;
+}
+
 li:last-child {
-		border-bottom: none;
+	border-radius: 0 0 .25rem .25rem;
 }
 </style>

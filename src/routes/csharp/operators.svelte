@@ -35,8 +35,15 @@
             <ListItem indent=2 href="#less-than-or-equal">Less than or equal</ListItem>
             <ListItem indent=2 href="#greater-than">Greater than</ListItem>
             <ListItem indent=2 href="#greater-than-or-equal">Greater than or equal</ListItem>
-        <!-- TODO: finish navigation -->
-        <ListItem href="#">hey future me finish this</ListItem>
+        <ListItem indent=1 href="#compound-assignment">Compound Assignment</ListItem>
+        <ListItem indent=1 href="member-access-ops">Simple Member access</ListItem>
+            <ListItem indent=2 href="#member-access">Member Access Operator</ListItem>
+            <ListItem indent=2 href="#member-access-index">Index Access Operator</ListItem>
+    <ListItem href="#advanced">Advanced Operators</ListItem>
+        <ListItem indent=1 href="#null-conditional-ops">Null-Conditional Member Access</ListItem>
+            <ListItem indent=2 href="#member-access-nc">Member Access Operator</ListItem>
+            <ListItem indent=2 href="#member-access-index-nc">Index Access Operator</ListItem>
+        <ListItem indent=1 href="#invocation">Invocation Expression</ListItem>
 </ul>
 
 
