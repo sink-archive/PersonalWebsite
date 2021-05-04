@@ -23,6 +23,11 @@
 }
 .topbar .right {
 	float: right;
-	margin-left: .5rem;
+	margin-left: 4rem;
 }
+ /* Specific to this page :) */
+ h1 {
+	 font-size: 3em;
+	 margin-top: .25rem;
+ }
 </style>

@@ -14,29 +14,21 @@
 		</div>
 		{/if}
 	</div>
-	<a {href}>Visit page</a>
 </a>
 
 <style>
 .card {
 	/* disable link colour for cards */
-	--link-color: unset !important;
-	/* layout crap */
-	display: flex;
-	flex-flow: column nowrap;
+	color: unset !important;
 	/* other stuffs */
-	min-width: 15rem;
-	flex: 1;
+	width: 15rem;
+	height: 5rem;
 	margin: .25rem;
 	padding: .5rem;
-	border: 1px solid lightslategray;
+	border: 1px solid #d0d0d0;
 	border-radius: .25rem;
 
 	text-align: left;
-}
-
-.main {
-	flex: 1;
 }
 
 .card a {
