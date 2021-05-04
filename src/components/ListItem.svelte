@@ -3,7 +3,7 @@
 	export let indent = 0;
 </script>
 
-<li style={`margin-left: calc(${indent}rem - 1px)`}><a {href}><slot/></a></li>
+<li style="margin-left: calc({indent}rem - 1px)"><a {href}><slot/></a></li>
 
 <style>
 li {
