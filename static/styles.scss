@@ -1,8 +1,8 @@
 body {
     font-family: sans-serif;
-		text-align: justify;
-		margin: 0;
-		margin-top: .5rem;
+	text-align: justify;
+	margin: 0;
+	margin-top: .5rem;
 }
 
 a {
@@ -14,14 +14,16 @@ a {
     linear-gradient(var(--link-color) 0 0) left  var(--p, 50%) bottom 0 /var(--d, 10%) 2px no-repeat,
     linear-gradient(var(--link-color) 0 0) right var(--p, 50%) bottom 0 /var(--d, 10%) 2px no-repeat;
     transition: 0.3s, background-position 0.3s 0.3s;
-}
-a:visited {
+
+    &:visited {
 		--link-color: #60c;
-}
-a:hover {
-    --d: 50%;
-    --p: 50.1%;
-    transition: cubic-bezier(0, 500, 1, 500) 0.3s, background-size 0.3s 0.3s;
+    }
+
+    &:hover {
+        --d: 50%;
+        --p: 50.1%;
+        transition: cubic-bezier(0, 500, 1, 500) 0.3s, background-size 0.3s 0.3s;
+    }
 }
 
 h1, h2, h3, h4, h5, h6 {

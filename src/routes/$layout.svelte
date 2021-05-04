@@ -1,5 +1,5 @@
 <svelte:head>
-    <link href="/styles.css" rel="stylesheet" />
+    <link href="/styles.css" rel="stylesheet" type="text/scss" />
 	<title>Cain's site</title>
 </svelte:head>
 
