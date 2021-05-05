@@ -1,3 +1,5 @@
+@import "./jbmono.css";
+
 body {
 	text-align: justify;
 	margin: 0;
@@ -44,8 +46,17 @@ h1, h2, h3, h4, h5, h6 {
 		font-weight: lighter;
 }
 
+code, .hljs {
+    /*
+     * Jetbrains Mono is sourced in CSS, but fallback to default monospace
+     * Also fallback to sans-serif as otherwise some unicode characters may
+     * be missing, and use a really ugly fallback instead.
+     */
+    font-family: 'Jetbrains Mono', monospace, sans-serif;
+    font-size: 0.9em;
+}
+
 .hljs {
-		font-family: 'Jetbrains Mono', monospace;
 		padding: .5rem !important;
 		border-radius: .25rem;
 }

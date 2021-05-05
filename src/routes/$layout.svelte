@@ -10,9 +10,9 @@
 </nav>
 
 <main>
-        <div class="container">
+    <div class="container">
         <slot/>
-        </div>
+    </div>
 </main>
 
 <style>

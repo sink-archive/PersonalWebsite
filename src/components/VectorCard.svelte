@@ -4,7 +4,7 @@
 </script>
 
 <div class="card">
-    <img src="//yellowsink.herokuapp.com/abstract_art/bitmap/{path}.png"
+    <img src="/abstract_art/bitmap/{path}.png"
          class="image"
          alt="Preview of Artwork: '{name}'">
     <p class="name">{name}</p>

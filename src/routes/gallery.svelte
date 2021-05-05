@@ -13,8 +13,27 @@
     to the beginning of July, 2020. It was the basis for my new set
     of profile pictures, which are currently in use.
     Check the homepage to see my current Gravatar.:
+    <br />
+    Oh and yeah I made some other random patterns of triangles and squares.
+    IDK why.
 </p>
 
-<div style="display: flex; flex-flow: row wrap; justify-content: space-evenly">
+<div class="container">
     <VectorCard path="avatar/avatar" name="Main avatar" />
+    <VectorCard path="avatar/avatar_dark" name="Dark avatar" />
+    <VectorCard path="avatar/avatar_contrast" name="High Contrast avatar" />
+    <VectorCard path="abstract-1" name="IDK 1" />
+    <VectorCard path="abstract-2" name="IDK 2" />
+    <VectorCard path="abstract-3" name="IDK 3" />
 </div>
+
+
+<style>
+ .container {
+     display: flex;
+     flex-flow: row wrap;
+     justify-content: space-evenly;
+
+     margin-top: 2.5rem;
+ }
+</style>
