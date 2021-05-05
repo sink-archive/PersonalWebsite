@@ -1,18 +1,18 @@
 <svelte:head>
     <link href="/styles.css" rel="stylesheet" />
-	<title>Cain's site</title>
+    <title>Cain's site</title>
 </svelte:head>
 
 <nav>
-	<a href="/">Home</a>
-	<a href="rhythm">Rhythm Games</a>
-	<a href="links">Links</a>
+    <a href="/">Home</a>
+    <a href="rhythm">Rhythm Games</a>
+    <a href="links">Links</a>
 </nav>
 
 <main>
-		<div class="container">
-    	<slot/>
-		</div>
+        <div class="container">
+        <slot/>
+        </div>
 </main>
 
 <style>

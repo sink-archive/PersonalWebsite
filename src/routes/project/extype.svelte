@@ -1,5 +1,5 @@
 <script>
-	import GithubIcon from '../../components/GithubIcon.svelte';
+    import GithubIcon from '../../components/GithubIcon.svelte';
 </script>
 
 

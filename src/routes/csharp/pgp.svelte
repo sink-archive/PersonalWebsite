@@ -1,7 +1,7 @@
 <script>
-	import Highlight  from 'svelte-highlight';
-	import csharp from "svelte-highlight/src/languages/csharp";
-	import "svelte-highlight/src/styles/base16-monokai.css";
+    import Highlight  from 'svelte-highlight';
+    import csharp from "svelte-highlight/src/languages/csharp";
+    import "svelte-highlight/src/styles/base16-monokai.css";
 </script>
 
 <h1>RSA PGP decryption in C#</h1>
@@ -128,27 +128,27 @@ public class Crypto
 using System.Text;
 
 public static class IoHelper
-	&#123;
-		public static Stream GetStream(this string s, Encoding encoding = null)
-		&#123;
-			var stream = new MemoryStream();
-			var writer = encoding != null ? new StreamWriter(stream, encoding) : new StreamWriter(stream);
-			writer.Write(s);
-			writer.Flush();
-			stream.Position = 0;
-			return stream;
-		&#125;
+    &#123;
+        public static Stream GetStream(this string s, Encoding encoding = null)
+        &#123;
+            var stream = new MemoryStream();
+            var writer = encoding != null ? new StreamWriter(stream, encoding) : new StreamWriter(stream);
+            writer.Write(s);
+            writer.Flush();
+            stream.Position = 0;
+            return stream;
+        &#125;
 
-		public static string GetString(Stream inputStream)
-		&#123;
-			using var reader = new StreamReader(inputStream);
-			var       output = reader.ReadToEnd();
-			return output;
-		&#125;
+        public static string GetString(Stream inputStream)
+        &#123;
+            using var reader = new StreamReader(inputStream);
+            var       output = reader.ReadToEnd();
+            return output;
+        &#125;
 
-		public static void WriteStream(Stream inputStream, ref byte[] dataBytes)
-		&#123;
-			using var outputStream = inputStream;
-			outputStream.Write(dataBytes, 0, dataBytes.Length);
-		&#125;
-	&#125;" />
+        public static void WriteStream(Stream inputStream, ref byte[] dataBytes)
+        &#123;
+            using var outputStream = inputStream;
+            outputStream.Write(dataBytes, 0, dataBytes.Length);
+        &#125;
+    &#125;" />

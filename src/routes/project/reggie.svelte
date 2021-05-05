@@ -1,7 +1,7 @@
 <script>
-	import GithubIcon from '../../components/GithubIcon.svelte';
-	import Highlight  from 'svelte-highlight';
-   	import bash from "svelte-highlight/src/languages/bash";
+    import GithubIcon from '../../components/GithubIcon.svelte';
+    import Highlight  from 'svelte-highlight';
+       import bash from "svelte-highlight/src/languages/bash";
     import "svelte-highlight/src/styles/base16-monokai.css";
 </script>
 
@@ -30,7 +30,7 @@ mv patched.css usrbg.css" />
 <h3>Install it</h3>
 <p>
     Arch Linux with <code>yay</code>:
-	<Highlight language={bash} code="yay -S reggie-git" />
+    <Highlight language={bash} code="yay -S reggie-git" />
 </p>
 <p>
     Arch Linux:
@@ -41,7 +41,7 @@ makepkg -si" />
 </p>
 <p>
     Any Linux:
-	<Highlight language={bash} code="wget &quot;https://github.com/cainy-a/reggie/archive/refs/heads/master.tar.gz&quot;
+    <Highlight language={bash} code="wget &quot;https://github.com/cainy-a/reggie/archive/refs/heads/master.tar.gz&quot;
 tar -xzf master.tar.gz
 cd reggie-master
 dotnet build

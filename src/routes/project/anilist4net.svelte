@@ -1,7 +1,7 @@
 <script>
-	import GithubIcon from '../../components/GithubIcon.svelte';
-	import Highlight  from 'svelte-highlight';
-   	import csharp from "svelte-highlight/src/languages/csharp";
+    import GithubIcon from '../../components/GithubIcon.svelte';
+    import Highlight  from 'svelte-highlight';
+       import csharp from "svelte-highlight/src/languages/csharp";
     import "svelte-highlight/src/styles/base16-monokai.css";
 </script>
 
@@ -25,7 +25,7 @@ Console.WriteLine($&quot;Name: &#123;anime.EnglishTitle&#125;&quot;); // Cowboy 
 Console.WriteLine($&quot;Episodes: &#123;anime.Episodes&#125;&quot;); // 26 episodes" />
     
     Cool! How about finding an anime more loosely, say just from it's name?
-	<Highlight language={csharp} code="using System;
+    <Highlight language={csharp} code="using System;
 using Anilist4Net;
 var client = new Client();
 var anime = await client.GetMediaBySearch(&quot;カウボーイビバップ&quot;);
@@ -33,7 +33,7 @@ Console.WriteLine($&quot;ID: &#123;anime.Id&#125;&quot;);           // 1
 Console.WriteLine($&quot;Year: &#123;anime.SeasonYear&#125;&quot;); // 1998" />
     
     You could also get an anime by it's ID on MyAnimeList, like this:
-	<Highlight language={csharp} code="using System;
+    <Highlight language={csharp} code="using System;
 using Anilist4Net;
 var client = new Client();
 var anime = await client.GetMediaByMalId(21);
