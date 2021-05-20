@@ -9,7 +9,7 @@
 </p>
 <p><em>This guide will focus on Manjaro KDE, not Xfce or Gnome.</em></p>
 
-<h4>What does being Arch-based mean?</h4>
+<h2>What does being Arch-based mean?</h2>
 <p>
 	Arch Linux is a popular, flexible distribution of Linux that is super stable.
 	It is known for being tedious to set up (don’t be put off, Manjaro has all the setup pre-done for you).
@@ -19,7 +19,7 @@
 	either on the official repository, or on the super diverse Arch User Repository (AUR).
 </p>
 
-<h4>Manjaro & KDE desktop orientation</h4>
+<h2>Manjaro & KDE desktop orientation</h2>
 <p>
 	“What the hell is all this stuff on my screen and how do I use it?”
 	First up, there will most likely be a large black window open with green text.
@@ -45,7 +45,7 @@
 	You can also disable adaptive acceleration if you like, but I personally really like it on.
 </p>
 
-<h4>Software Setup: Web Browsing</h4>
+<h2>Software Setup: Web Browsing</h2>
 <p>
 	Firefox users will have a great experience out-of-the box in Manjaro, mainly because it’s already there.
 	Just launch it from the Application Launcher (Start Menu) or the taskbar and you’re done.
@@ -71,7 +71,7 @@
 	To install Chrome type <code>sudo pacman –S chromium</code>, then enter your password.
 </p>
 
-<h4>Software Setup: Getting Work Done</h4>
+<h2>Software Setup: Getting Work Done</h2>
 <p>
 	There are multiple office suites available for Linux, although Microsoft Office is not one of them.
 </p>
@@ -99,7 +99,7 @@
 </p>
 
 <h3>Software Installation</h3>
-<h4>GUI</h4>
+<h2>GUI</h2>
 <p>
 	This is the easiest way for most users.
 	Use the application called Add/Remove Software to find apps by category or search, and install them.
@@ -110,14 +110,14 @@
 	You can also enable Flatpaks and Snaps.
 </p>
 
-<h4>Snaps</h4>
+<h2>Snaps</h2>
 <p>
 	Snaps are pieces of software that are available from <a href="//snapcraft.io">snapcraft.io</a>,
 	and installed either using the snap command, which will be given on the snap package’s page,
 	or using the GUI installer, once enabled.
 </p>
 
-<h4>Flatpaks</h4>
+<h2>Flatpaks</h2>
 <p>
 	Flatpaks are very similar to Snaps, but Flatpak first needs installing.
 	Install “flatpak” with pacman or use the GUI installer to install it.
@@ -125,7 +125,7 @@
 	Right at the bottom of a package’s flathub page is it’s command to install.
 </p>
 
-<h4>Software Installation – Finding Software for Arch & Manjaro</h4>
+<h2>Software Installation – Finding Software for Arch & Manjaro</h2>
 <p>
 	If the software you want has Arch Linux install instructions, follow them.
 	If you know which software you want, the first stop is the Arch Wiki &#64;
@@ -139,7 +139,7 @@
 	Search for the package, and if you find it, then you can install it from there.
 </p>
 
-<h4>CLI</h4>
+<h2>CLI</h2>
 <h5>Pacman & Official Packages</h5>
 <p>
 	Using <code>pacman</code>, you need to use the <code>-S</code> flag to install packages.
@@ -205,7 +205,7 @@
 	Because yay uses the same flags as pacman, it also uses the <code>-R</code> flag.
 </p>
 
-<h4>Conclusion</h4>
+<h2>Conclusion</h2>
 <p>
 	Now you know how to install software using Arch’s packaging tools
 	and know your way around the KDE desktop
