@@ -1,0 +1,84 @@
+<h1>The Pain of Python</h1>
+
+
+<h2>Weak Typing</h2>
+<p>
+    Let's talk datatypes. Python supports pretty much the same standard set as anything else, but with one problem.
+    Python does not strongly type. This means you can not guarantee which type a function returns.
+    The problem is wording: Strongly-typed languages use that term because strong is perceived as better than weak.
+    Weakly-typed languages, on the other hand, call themselves Dynamically-typed, because that sounds better than
+    Statically-typed.
+</p>
+
+<h2>The Great Divide!!! (2 vs 3)</h2>
+<p>
+    Let's say your friend has just sent you their first program and want you to try it out.
+    Of course, when you run it you get silly errors. This is because they are using Python 2 and you are using 3, or
+    vice versa. This is a problem because the Python team have been trying for years to get people to move to 3, but
+    people just hang on to 2. There is actually a way we could fix this, which I'll talk about later.
+</p>
+
+<h2>Abstraction vs <code>private</code></h2>
+<p>
+    Python decided that, like other languages, it would be a good idea to allow members of a class to be private.
+    The problem is execution. They decided to use Abstraction, which just changes the name of the member when out of
+    scope. Private members should start with <code>_</code>, and Protected with <code>__</code>,
+    but what the interpreter does is that a class called "<code>Parent</code>" with a member called
+    "<code>__hello()</code>"
+    will become "<code>_Parent__hello()</code>" when out of scope, which is not what we want, because
+    <em>it still exists</em>.
+</p>
+
+<h2>The crude concept that I'm gonna call the <em>"Default IDE"</em></h2>
+<p>
+    Okay, so this idea I have of a <em>"Default IDE"</em> is that each language has an IDE that is associated with
+    it. Often, these are the IDEs used to teach said languages.
+</p>
+<p>
+    So, if you wanted to learn C#, you would probably start with Visual Studio, a full featured IDE used by pros.
+    If you wanted to learn Java you may use IntelliJ, Eclipse, or Netbeans, all full featured IDEs (especially
+    IntelliJ, which is exceptional!)
+</p>
+<p>
+    But lets look at Python. PyCharm exists, and it's probably the best way to program in Python,
+    but when you first learned Python I wouldn't be surprised if you started with <em>IDLE</em>, which sucks.
+    I know I did.
+</p>
+
+<h2>Definition of variables</h2>
+<p>
+    Here's how you create a new variable <em>x</em> with a value of 5: <code>x = 5</code>.
+</p>
+<p>
+    Now here's how you assign an existing variable <em>x</em> with a value of 5: <code>x = 5</code>
+</p>
+<p>
+    Now, even though this isn't exclusive to Python, this method of dealing with variables is a bit silly.
+    From a glance at a variable use in, say, C#, I know whether it already exists, or I'm declaring a new one.
+    Python doesn't have this, which can be annoying in larger programs, because if you try to define a variable that
+    already exists, you won't get an error, it'll just override the old value, a potential bug causer.
+</p>
+
+<h2>And finally, and this is a big one, <em>speed</em></h2>
+<p>I said I'd cover this earlier, so here it is: There are two main types of program,</p>
+<ul>
+    <li>A Compiled Program</li>
+    <li>An Interpreted Program</li>
+</ul>
+<p>
+    Compiled code is really fast, but needs compiling for each different type of processor. It also just
+    <em>works</em>, without installing interpreters.
+    Interpreted code has it's own benefits: you write your code, then you're done. Everyone can run it, just give
+    them the script. Problem: it's SLOW!!! Yeah sure, there are things like PyPy that are faster, but PyPy only
+    supports the aging Python 2.7, plus, the official CPython is still the goto, slow, interpreter.
+
+    I'm not proposing that we just make Python a compiled language, it would be a massive undertaking, what I instead
+    propose is to basically do Java again, where your code compiles to an intermediate language, which is then
+    ran by a system similar to the Java VM. This is faster, because half of the work is done by the programmer when
+    they "build" the project, but it's still compatible because of the interpreter approach.
+</p>
+<p>
+    This would also be a massive undertaking, but let's you keep the biggest pro of an interpreted language, while
+    approaching speeds of compiled programs. Not quite as fast, but close.
+</p>
+<p>Rant over.</p>
