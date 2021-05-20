@@ -68,18 +68,13 @@
 <ul class="list">
     <ListItem href="feature/can-i-jailbreak">Can I jailbreak? (visit on your phone)</ListItem>
     <ListItem href="//routinehub.co/user/Yellowsink">iOS Siri Shortcuts</ListItem>
-    <ListItem href="article/jailbreak">Cringy jailbreaking article</ListItem>
-    <ListItem href="feature/plugins">Audio Plugins</ListItem>
-    <ListItem href="//cainssharptools.readthedocs.io">An old .NET library</ListItem>
-    <ListItem href="project/run-pp">Run++ - a replacement for the Windows run dialog</ListItem>
+    <ListItem href="project/run-pp">Run++ - a (dead) replacement for the Windows run dialog</ListItem>
     <ListItem href="duke">Duke Nukem 3D stuff</ListItem>
     <ListItem href="project/source-map-installer">Map installer for Source engine games</ListItem>
     <ListItem href="project/unity">My Unity stuff</ListItem>
-    <ListItem href="article/powerpoint">Some cool stuff in Powerpoint</ListItem>
-    <ListItem href="article/chromeos">Chrome OS idk anymore</ListItem>
-    <ListItem href="article/python">Me hating Python a little</ListItem>
-    <ListItem href="article/manjaro">Cringe person calls Arch stable</ListItem>
 </ul>
+
+<p style="font-size: 0.75rem">There are some hidden cringe articles here if you know where they are</p>
 
 <style>
 .card-container {
